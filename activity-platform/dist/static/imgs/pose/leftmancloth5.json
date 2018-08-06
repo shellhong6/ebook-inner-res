@@ -1,0 +1,92 @@
+{"frames": {
+
+"after_arm.png":
+{
+	"frame": {"x":1,"y":536,"w":162,"h":113},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":162,"h":113},
+	"sourceSize": {"w":162,"h":113}
+},
+"after_foot.png":
+{
+	"frame": {"x":1,"y":1401,"w":126,"h":345},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":126,"h":345},
+	"sourceSize": {"w":126,"h":345}
+},
+"after_hand.png":
+{
+	"frame": {"x":128,"y":1401,"w":116,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":60,"y":0,"w":116,"h":95},
+	"sourceSize": {"w":176,"h":141}
+},
+"after_leg.png":
+{
+	"frame": {"x":128,"y":1497,"w":114,"h":260},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":114,"h":260},
+	"sourceSize": {"w":114,"h":260}
+},
+"before_arm.png":
+{
+	"frame": {"x":1,"y":650,"w":157,"h":120},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":120},
+	"sourceSize": {"w":157,"h":120}
+},
+"before_foot.png":
+{
+	"frame": {"x":1,"y":1,"w":208,"h":332},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":332},
+	"sourceSize": {"w":208,"h":332}
+},
+"before_hand.png":
+{
+	"frame": {"x":1,"y":1747,"w":117,"h":93},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":117,"h":93},
+	"sourceSize": {"w":157,"h":121}
+},
+"before_leg.png":
+{
+	"frame": {"x":1,"y":1151,"w":150,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":249},
+	"sourceSize": {"w":150,"h":249}
+},
+"cloth.png":
+{
+	"frame": {"x":1,"y":771,"w":150,"h":379},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":379},
+	"sourceSize": {"w":150,"h":379}
+},
+"hair.png":
+{
+	"frame": {"x":1,"y":334,"w":178,"h":201},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":178,"h":201},
+	"sourceSize": {"w":178,"h":201}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "leftmancloth5.png",
+	"format": "RGBA8888",
+	"size": {"w":245,"h":1841},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:46b24707ee1552d1ea1dc43541125995:1/1$"
+}
+}

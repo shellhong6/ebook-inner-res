@@ -1,0 +1,648 @@
+.border_none {
+  border: none !important
+}
+.hty_read {
+  font-size: 14px;
+  color: #333;
+  height: 28px;
+  line-height: 28px;
+  background-color: #fff5d6;
+  margin: 4px 0;
+  padding: 0 0 0 20px
+}
+.hty_read a {
+  color: #37a
+}
+.hty_read a:hover {
+  opacity: 0.8;
+  -ms-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80)
+}
+.hty_read .s-news-reading {
+  display: inline-block;
+  float: right;
+  background: #fff;
+  border: 1px solid #ff7315;
+  border-radius: 2px;
+  padding: 0 12px;
+  height: 21px;
+  font-size: 12px;
+  color: #ff8432;
+  line-height: 21px;
+  margin-top: 3px
+}
+.hty_read .s-news-reading:hover {
+  background: #ffedd9;
+  border: 1px solid #ffaf62;
+  color: #ff9d61
+}
+.book_list .book_info p.info {
+  width: 180px;
+  height: 58px
+}
+.lf_nav .book_type {
+  padding-top: 21px
+}
+.lf_nav .book_type h2.type_title {
+  border-left: 6px solid #f32424;
+  height: 16px;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 30px 0 20px;
+  color: #4e4e4e
+}
+.lf_nav .book_type .type_list {
+  margin: 0 26px;
+  border-bottom: 1px solid #ddd
+}
+.lf_nav .book_type .type_list ul {
+  zoom: 1;
+  overflow: hidden;
+  margin: 10px auto;
+  margin-left: -28px
+}
+.lf_nav .book_type .type_list ul li {
+  width: 56px;
+  overflow: hidden;
+  margin-left: 28px;
+  line-height: 28px;
+  float: left
+}
+.lf_nav .book_type .type_list ul li a {
+  font-size: 14px;
+  color: #666
+}
+.FocusPic {
+  width: 714px;
+  height: 408px;
+  position: relative;
+  zoom: 1;
+  overflow: hidden
+}
+.FocusPic .FP_angle {
+  width: 7px;
+  height: 7px;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  z-index: 10
+}
+.FocusPic .FP_arr_left {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 8;
+  top: 184px;
+  left: 0
+}
+.FocusPic .FP_arr_left a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url(../images/lb_ico.jpg) no-repeat 0 0
+}
+.FocusPic .FP_arr_left a:hover {
+  background-position: 0 -40px
+}
+.FocusPic .FP_arr_right {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 8;
+  top: 184px;
+  right: 0
+}
+.FocusPic .FP_arr_right a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url(../images/lb_ico.jpg) no-repeat -40px 0
+}
+.FocusPic .FP_arr_right a:hover {
+  background-position: -40px -40px
+}
+.FocusPic .FP_NumList {
+  position: absolute;
+  left: 0;
+  bottom: 65px;
+  zoom: 1;
+  overflow: hidden;
+  z-index: 9;
+  width: 714px;
+  height: 10px;
+  text-align: center
+}
+.FocusPic .FP_NumList span {
+  margin: 0 2px;
+  display: inline-block;
+  border: 1px solid #9d9ca1;
+  height: 7px;
+  width: 38px;
+  background-color: #9d9ca1;
+  cursor: pointer
+}
+.FocusPic .FP_NumList span.selected {
+  border: 1px solid #ff8432;
+  background-color: #ff8432
+}
+.FocusPic .FP_pic {
+  width: 714px;
+  height: 408px;
+  overflow: hidden;
+  float: left
+}
+.FocusPic .FP_pic .FP_tit_bg {
+  height: 40px;
+  width: 100%;
+  margin-top: -40px;
+  background: #000;
+  filter: Alpha(Opacity=30);
+  opacity: .3
+}
+.FocusPic .FP_pic .FP_tit_txt {
+  line-height: 40px;
+  padding-left: 30px;
+  margin-top: -40px;
+  color: #fff;
+  position: relative;
+  *position: static
+}
+.FocusPic .FP_pic .FP_tit_ico {
+  width: 18px;
+  height: 18px;
+  margin: -28px 0 0 7px;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  background: url("../images/icons.png") no-repeat -183px 0;
+  _background: none;
+  _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='images/p_w_05.png');
+  position: relative;
+  *position: static
+}
+.FocusPic .FP_pic a:link, .FP_pic a:visited {
+  color: #fff;
+  text-decoration: none
+}
+.FocusPic .FP_pic a:hover {
+  text-decoration: underline
+}
+.scrollPlay {
+  height: 100%;
+  border: 1px solid #ddd
+}
+.scrollPlay .bigInfoBox {
+  padding: 26px 0 23px 0;
+  margin: 0 10px;
+  border-bottom: 1px dashed #ddd;
+  zoom: 1;
+  overflow: hidden
+}
+.scrollPlay .bigInfoBox .imgBox {
+  width: 148px;
+  height: 198px;
+  border: 1px solid #ddd;
+  float: left;
+  margin-left: 38px;
+  overflow: hidden
+}
+.scrollPlay .bigInfoBox .imgBox img {
+  width: 148px;
+  height: 198px
+}
+.scrollPlay .bigInfoBox .bookConBox {
+  width: 390px;
+  float: left;
+  margin-left: 55px;
+  height: 200px
+}
+.scrollPlay .bigInfoBox .bookConBox p {
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  width: 100%
+}
+.scrollPlay .bigInfoBox .bookConBox p a {
+  color: #333
+}
+.scrollPlay .bigInfoBox .bookConBox p.bookName {
+  padding-top: 12px
+}
+.scrollPlay .bigInfoBox .bookConBox p.bookName a {
+  font-size: 24px
+}
+.scrollPlay .bigInfoBox .bookConBox p.booKAuthor {
+  margin-top: 10px;
+  font-size: 12px
+}
+.scrollPlay .bigInfoBox .bookConBox p.booKAuthor a {
+  font-size: 12px
+}
+.scrollPlay .bigInfoBox .bookConBox .bookText {
+  width: 390px;
+  position: relative;
+  margin-top: 25px
+}
+.scrollPlay .bigInfoBox .bookConBox .bookText span {
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  line-height: 24px;
+  background: url("../images/icons.png")
+}
+.scrollPlay .bigInfoBox .bookConBox .bookText span.lftop {
+  left: 0;
+  top: -14px;
+  background-position: -112px -49px
+}
+.scrollPlay .bigInfoBox .bookConBox .bookText span.rtbt {
+  right: 0;
+  bottom: -14px;
+  background-position: -133px -49px
+}
+.scrollPlay .bigInfoBox .bookConBox .bookText .txt {
+  font-size: 12px;
+  width: 390px;
+  text-indent: 2em;
+  text-align: left;
+  line-height: 22px
+}
+.scrollPlay .bigInfoBox .bookConBox .bookText .txt a {
+  color: #666
+}
+.scrollPlay .scrollInfoBox {
+  width: 714px;
+  height: 130px;
+  margin-top: 14px
+}
+.scrollPlay .scrollInfoBox .lfBtn, .scrollPlay .scrollInfoBox .rtBtn {
+  width: 18px;
+  height: 40px;
+  margin-top: 45px;
+  float: left
+}
+.scrollPlay .scrollInfoBox .lfBtn a, .scrollPlay .scrollInfoBox .rtBtn a {
+  display: block;
+  width: 18px;
+  height: 40px;
+  background: url("../images/icons.png") no-repeat 0 0
+}
+.scrollPlay .scrollInfoBox .lfBtn a {
+  background-position: -161px -49px
+}
+.scrollPlay .scrollInfoBox .lfBtn a:hover {
+  background-position: -210px -49px
+}
+.scrollPlay .scrollInfoBox .rtBtn {
+  float: right
+}
+.scrollPlay .scrollInfoBox .rtBtn a {
+  background-position: -187px -49px
+}
+.scrollPlay .scrollInfoBox .rtBtn a:hover {
+  background-position: -231px -49px
+}
+.scrollPlay .scrollInfoBox .scrollBox {
+  width: 678px;
+  height: 130px;
+  margin-left: 18px;
+  position: relative;
+  overflow: hidden
+}
+.scrollPlay .scrollInfoBox .scrollBox ul {
+  margin-left: -9px;
+  zoom: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0
+}
+.scrollPlay .scrollInfoBox .scrollBox ul li {
+  width: 218px;
+  height: 128px;
+  margin-left: 9px;
+  border: 1px solid #FFF;
+  float: left;
+  background-color: #fbfbfb
+}
+.scrollPlay .scrollInfoBox .scrollBox ul li a {
+  display: block;
+  color: #333
+}
+.scrollPlay .scrollInfoBox .scrollBox ul li .lfBookInfo {
+  width: 105px;
+  margin: 25px 0 0 19px;
+  float: left
+}
+.scrollPlay .scrollInfoBox .scrollBox ul li .lfBookInfo p.book_name {
+  font-size: 16px;
+  color: #333;
+  width: 105px;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.scrollPlay .scrollInfoBox .scrollBox ul li .lfBookInfo p.book_info {
+  width: 105px;
+  height: 60px;
+  overflow: hidden;
+  font-size: 12px;
+  margin-top: 5px;
+  color: #999999;
+  line-height: 20px
+}
+.scrollPlay .scrollInfoBox .scrollBox ul li .rtBookImg {
+  float: right;
+  width: 60px;
+  height: 80px;
+  margin: 25px 18px 0 0
+}
+.scrollPlay .scrollInfoBox .scrollBox ul li .rtBookImg img {
+  width: 60px;
+  height: 80px
+}
+.scrollPlay .scrollInfoBox .scrollBox ul li.active {
+  border: 1px solid #eee
+}
+.book_list ul {
+  margin: 15px 0 0 -50px
+}
+.book_list ul li {
+  margin: 0px 0 38px 50px
+}
+.book_list ul li .book_info p.book_author {
+  line-height: 24px
+}
+.wm-oriange {
+  padding-bottom: 11px
+}
+.index_publish ol li .book_info {
+  width: 135px
+}
+.index_publish ol li .book_info p.book_type {
+  height: 23px;
+  line-height: 23px
+}
+.index_publish ol li .book_info p.book_name {
+  width: 135px
+}
+.index_publish ol li .book_info p.book_author {
+  width: 135px
+}
+.topic_box {
+  background-color: #eee;
+  width: 714px;
+  height: 408px;
+  zoom: 1;
+  overflow: hidden;
+  position: relative
+}
+.topic_box .bg {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0
+}
+.topic_box .innerMask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  z-index: 2
+}
+.topic_box .blur {
+  filter: url(blur.svg#blur);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false)
+}
+.topic_box .topic_description {
+  position: relative;
+  z-index: 10;
+  float: left;
+  margin: 75px 0 0 48px;
+  width: 335px
+}
+.topic_box .topic_description p {
+  width: 335px;
+  height: 50px;
+  overflow: hidden;
+  color: #333;
+  line-height: 50px;
+  font-size: 20px;
+  border-bottom: 1px solid #e3e3e3
+}
+.topic_box .topic_description p span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+  background: url("../images/icons.png") no-repeat -183px 0
+}
+.topic_box .topic_description .description {
+  text-indent: 2em;
+  font-size: 16px;
+  color: #666;
+  padding: 30px 0;
+  line-height: 25px
+}
+.topic_box .topic_img {
+  float: right;
+  width: 180px;
+  height: 240px;
+  margin: 75px 65px 0 0;
+  position: relative;
+  z-index: 10
+}
+.topic_box .topic_img img {
+  width: 180px;
+  height: 240px
+}
+.guide_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1200;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.4;
+  -ms-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=40);
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=40)
+}
+.guide_logined {
+  display: none;
+  position: absolute;
+  width: 592px;
+  height: 506px;
+  z-index: 12001;
+  top: -22px;
+  left: 50%;
+  margin-left: -258px
+}
+.guide_logined .guide_img {
+  width: 592px;
+  height: 506px;
+  background: url("../images/guide-index.png") no-repeat 0 0;
+  _background: url("../images/guide-index.gif") no-repeat 0 0
+}
+.guide_logined .guide_img a {
+  line-height: 9999px;
+  overflow: hidden
+}
+.guide_logined .guide_img a.close_guide {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 240px
+}
+.guide_logined .guide_img a.btn_get {
+  position: absolute;
+  width: 170px;
+  height: 60px;
+  left: 208px;
+  bottom: 27px
+}
+.guide_login {
+  display: none;
+  position: absolute;
+  z-index: 12001;
+  top: -63px;
+  left: 50%;
+  margin-left: -69px
+}
+.guide_login .guide_img {
+  width: 592px;
+  height: 400px;
+  background: url("../images/guide-index1.png") no-repeat 0 0;
+  _background: url("../images/guide-index1.gif") no-repeat 0 0
+}
+.guide_login a {
+  line-height: 9999px;
+  overflow: hidden
+}
+.guide_login a.close_guide {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 2px;
+  top: 135px
+}
+.guide_login a.btn_get {
+  position: absolute;
+  width: 170px;
+  height: 60px;
+  left: 208px;
+  bottom: 27px
+}
+.update-list {
+  overflow: hidden;
+  margin-bottom: 57px;
+  position: relative
+}
+.update-list .tabs {
+  position: absolute;
+  top: 1px;
+  right: 0
+}
+.update-list .tabs a.item {
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #666;
+  cursor: pointer
+}
+.update-list .tabs a.item.active {
+  background-color: #f32424;
+  color: #FFF
+}
+.update-list .tabs a.item.active span {
+  left: 50px;
+  top: 30px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #f32424
+}
+.update-list .update-content {
+  margin-top: 18px
+}
+.update-list .update-content ul li {
+  height: 30px;
+  line-height: 30px;
+  font-size: 0;
+  background: #fff
+}
+.update-list .update-content ul li span {
+  font-size: 14px;
+  display: inline-block;
+  color: #b3b3b3;
+  position: relative
+}
+.update-list .update-content ul li span.author {
+  width: 130px;
+  text-align: right;
+  margin-right: 40px
+}
+.update-list .update-content ul li span.time {
+  position: absolute;
+  right: 0;
+  margin-right: 6px
+}
+.update-list .update-content ul li a {
+  display: inline-block;
+  font-size: 14px;
+  float: left
+}
+.update-list .update-content ul li a.type {
+  color: #1e7ad5;
+  margin-right: 3px
+}
+.update-list .update-content ul li a.name {
+  color: #333;
+  margin-right: 65px;
+  width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.update-list .update-content ul li a.chapter {
+  margin-right: 65px;
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative
+}
+.update-list .update-content ul li a.chapter i {
+  display: inline-block;
+  width: 17px;
+  height: 10px;
+  background: url(../images/vip.png) no-repeat 0 0;
+  margin-left: 4px;
+  vertical-align: middle
+}
+.update-list .update-content ul li a:hover.type {
+  color: #4f9fed
+}
+.update-list .update-content ul li a:hover.name {
+  color: #ff8432
+}
+.publist_list{
+  margin-bottom: 30px;
+}

@@ -1,0 +1,92 @@
+{"frames": {
+
+"after_arm.png":
+{
+	"frame": {"x":340,"y":347,"w":162,"h":113},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":162,"h":113},
+	"sourceSize": {"w":162,"h":113}
+},
+"after_foot.png":
+{
+	"frame": {"x":225,"y":1,"w":126,"h":345},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":126,"h":345},
+	"sourceSize": {"w":126,"h":345}
+},
+"after_hand.png":
+{
+	"frame": {"x":340,"y":461,"w":116,"h":93},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":60,"y":0,"w":116,"h":93},
+	"sourceSize": {"w":176,"h":141}
+},
+"after_leg.png":
+{
+	"frame": {"x":225,"y":347,"w":114,"h":260},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":114,"h":260},
+	"sourceSize": {"w":114,"h":260}
+},
+"before_arm.png":
+{
+	"frame": {"x":210,"y":813,"w":158,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":158,"h":121},
+	"sourceSize": {"w":158,"h":121}
+},
+"before_foot.png":
+{
+	"frame": {"x":1,"y":602,"w":208,"h":332},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":332},
+	"sourceSize": {"w":208,"h":332}
+},
+"before_hand.png":
+{
+	"frame": {"x":352,"y":251,"w":121,"h":93},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":121,"h":93},
+	"sourceSize": {"w":157,"h":121}
+},
+"before_leg.png":
+{
+	"frame": {"x":352,"y":1,"w":150,"h":249},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":249},
+	"sourceSize": {"w":150,"h":249}
+},
+"cloth.png":
+{
+	"frame": {"x":1,"y":1,"w":223,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":223,"h":600},
+	"sourceSize": {"w":223,"h":600}
+},
+"hair.png":
+{
+	"frame": {"x":210,"y":608,"w":193,"h":204},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":193,"h":204},
+	"sourceSize": {"w":193,"h":204}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "leftmancloth1.png",
+	"format": "RGBA8888",
+	"size": {"w":503,"h":935},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3911afc03a6ec81835296a5296eee126:1/1$"
+}
+}

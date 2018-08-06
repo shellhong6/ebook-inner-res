@@ -1,0 +1,100 @@
+{"frames": {
+
+"cloth.png":
+{
+	"frame": {"x":1,"y":1,"w":202,"h":352},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":58,"w":202,"h":352},
+	"sourceSize": {"w":202,"h":410}
+},
+"left_arm.png":
+{
+	"frame": {"x":163,"y":520,"w":92,"h":165},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":165},
+	"sourceSize": {"w":92,"h":165}
+},
+"left_foot.png":
+{
+	"frame": {"x":86,"y":612,"w":76,"h":257},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":0,"w":76,"h":257},
+	"sourceSize": {"w":96,"h":337}
+},
+"left_hand.png":
+{
+	"frame": {"x":163,"y":686,"w":78,"h":103},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":78,"h":103},
+	"sourceSize": {"w":92,"h":157}
+},
+"left_leg.png":
+{
+	"frame": {"x":1,"y":616,"w":84,"h":259},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":259},
+	"sourceSize": {"w":84,"h":259}
+},
+"left_shoe.png":
+{
+	"frame": {"x":80,"y":943,"w":96,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":72},
+	"sourceSize": {"w":96,"h":72}
+},
+"right_arm.png":
+{
+	"frame": {"x":163,"y":354,"w":92,"h":165},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":165},
+	"sourceSize": {"w":92,"h":165}
+},
+"right_foot.png":
+{
+	"frame": {"x":86,"y":354,"w":76,"h":257},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":0,"w":76,"h":257},
+	"sourceSize": {"w":96,"h":337}
+},
+"right_hand.png":
+{
+	"frame": {"x":1,"y":876,"w":78,"h":103},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":103},
+	"sourceSize": {"w":126,"h":165}
+},
+"right_leg.png":
+{
+	"frame": {"x":1,"y":354,"w":84,"h":261},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":261},
+	"sourceSize": {"w":84,"h":261}
+},
+"right_shoe.png":
+{
+	"frame": {"x":86,"y":870,"w":96,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":72},
+	"sourceSize": {"w":96,"h":72}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "mancloth5.png",
+	"format": "RGBA8888",
+	"size": {"w":256,"h":1016},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0289079b8f9268d6c8c50170933fe57d:1/1$"
+}
+}

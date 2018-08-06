@@ -1,0 +1,20 @@
+{"frames": {
+
+"4.png":
+{
+	"frame": {"x":1,"y":1,"w":1080,"h":1920},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1080,"h":1920},
+	"sourceSize": {"w":1080,"h":1920}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "scenes.png",
+	"format": "RGBA8888",
+	"size": {"w":1082,"h":1922},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:918d5b30ec274d236ba4ece5e5e062c9:1/1$"
+}
+}

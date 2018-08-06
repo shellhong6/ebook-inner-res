@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: javascript/services.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: javascript/services.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>var ajax = require('./ajax.js');
+var utils = require('./utils.js');
+import Constant from './constant.js';
+
+function toLogin(loginUrl){
+  if(loginUrl.indexOf('?') != -1){
+    loginUrl += '&amp;';
+  }
+  else{
+    loginUrl += '?';
+  }
+  loginUrl = utils.replaceUrlParam(loginUrl,'useruri',window.location.href,true);
+  window.location.href = loginUrl;
+}
+
+ajax.globalAjaxSettings.baseUrl = 'https://act-app.meizu.com';
+
+$(document).on('ajaxSuccess',function(event,xhr,settings, data){
+  if(data.code == 401){
+    toLogin(data.value);
+  }
+});
+/**
+ * 与登陆无关的接口
+ * @module httpService
+ */
+var httpService = {
+  campaignId: Constant.campaignId,
+  imei: '',//在native.js里面赋值
+  sn: '',//在native.js里面赋值
+  _CONTENT: {},
+  content:function(key,value){
+    if(typeof key == 'undefined')
+      return this._CONTENT;
+    else if(typeof value == 'undefined')
+      return this._CONTENT[key];
+    else
+      this._CONTENT[key] = value;
+  },
+  getMyPrize: function(successcallback,failcallback){
+     var params = {
+      campaignId:this.campaignId,
+      imei:this.imei,
+      sn: this.sn
+    };
+
+    ajax.get('/campaign/myPrize',params,successcallback,failcallback);
+  },
+  /**
+     * 领取流量、话费
+     * @param awardId
+     * @returns {boolean}
+     */
+  recharge_money: function (params,successcallback,failcallback) {
+    params = $.extend({},{
+      imei: this.imei,
+      rechargeType: 'MONEY'
+    },params);
+    ajax.post('/campaign/mz/recharge.do',params,successcallback,failcallback);
+  },
+  recharge_data: function(params,successcallback,failcallback){
+    this.recharge_money($.extend({rechargeType: 'DATA'},params),successcallback,failcallback);
+  },
+  getDraw: function(params,successcallback,failcallback){
+
+    params = $.extend({},params,{
+      campaignId: this.campaignId,
+      imei:this.imei,
+      sn: this.sn
+    });
+    ajax.post('/campaign/draw',params,successcallback,failcallback);
+  },
+  getTmpl: function(successcallback,failcallback){
+    var params = {
+          campaignId: this.campaignId
+        };
+    ajax.get('/static/campaign/getTmpl',params,successcallback,failcallback);
+  },
+  getCampaignInfo: function(successcallback,failcallback){
+    var params = {
+          campaignId: this.campaignId
+        };
+    ajax.get('/campaign/getCampaignInfo',params,successcallback,failcallback);
+  },
+  fillInfo: function(params,successcallback,failcallback){
+    params = $.extend({},params,{
+      imei:this.imei
+    });
+    ajax.post('/campaign/fillInfo',params,successcallback,failcallback);
+  },
+  getWinnerList: function(successcallback,failcallback){
+    var params = {
+          campaignId: this.campaignId
+        };
+    ajax.get('/campaign/winnerList',params,successcallback,failcallback);
+  },
+  getAdCpd: function(params,successcallback,failcallback){
+    ajax.get('/campaign/getCpd', params,successcallback,failcallback);
+  },
+  getApps: function(successcallback,failcallback){
+    var params = {
+          campaignId: this.campaignId
+        };
+    ajax.get('/campaign/getApps',params,successcallback,failcallback);
+  },
+  login(){
+  },
+  isLogin(){
+    return true;
+  }
+}
+
+module.exports = httpService;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-ajax.html">ajax</a></li><li><a href="module-AppsGenerator.html">AppsGenerator</a></li><li><a href="module-AwardDialog.html">AwardDialog</a></li><li><a href="module-Dom.html">Dom</a></li><li><a href="module-httpService.html">httpService</a></li><li><a href="module-Lottery.html">Lottery</a></li><li><a href="module-Mock.html">Mock</a></li><li><a href="module-module_app_index.html">module/app/index</a></li><li><a href="module-Native.html">Native</a></li><li><a href="module-oauthService.html">oauthService</a></li><li><a href="module-showVerifyCodeDlg.html">showVerifyCodeDlg</a></li><li><a href="module-stateMachine.html">stateMachine</a></li><li><a href="module-tools.html">tools</a></li><li><a href="module-Track.html">Track</a></li><li><a href="module-utils.html">utils</a></li></ul><h3>Classes</h3><ul><li><a href="AppsInstallInit.html">AppsInstallInit</a></li><li><a href="ExtraWelfareList.html">ExtraWelfareList</a></li><li><a href="module-AppsGenerator-AppsGenerator.html">AppsGenerator</a></li></ul><h3>Namespaces</h3><ul><li><a href="module-AwardDialog-AwardDialog.html">AwardDialog</a></li><li><a href="module-Mock-Mock.html">Mock</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Jul 12 2018 17:29:08 GMT+0800 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

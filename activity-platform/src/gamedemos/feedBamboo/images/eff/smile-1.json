@@ -1,0 +1,93 @@
+{"frames": {
+
+"_12":
+{
+	"frame": {"x":1,"y":1,"w":220,"h":366},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":25,"w":220,"h":366},
+	"sourceSize": {"w":365,"h":440},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"_13":
+{
+	"frame": {"x":223,"y":1,"w":220,"h":366},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":25,"w":220,"h":366},
+	"sourceSize": {"w":365,"h":440},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"_14":
+{
+	"frame": {"x":445,"y":1,"w":220,"h":366},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":25,"w":220,"h":366},
+	"sourceSize": {"w":365,"h":440},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"_15":
+{
+	"frame": {"x":667,"y":1,"w":220,"h":366},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":25,"w":220,"h":366},
+	"sourceSize": {"w":365,"h":440},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"_16":
+{
+	"frame": {"x":889,"y":1,"w":220,"h":366},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":25,"w":220,"h":366},
+	"sourceSize": {"w":365,"h":440},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"_20":
+{
+	"frame": {"x":1111,"y":1,"w":220,"h":366},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":25,"w":220,"h":366},
+	"sourceSize": {"w":365,"h":440},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"_21":
+{
+	"frame": {"x":1333,"y":1,"w":220,"h":366},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":25,"w":220,"h":366},
+	"sourceSize": {"w":365,"h":440},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"_32":
+{
+	"frame": {"x":1555,"y":1,"w":220,"h":366},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":25,"w":220,"h":366},
+	"sourceSize": {"w":365,"h":440},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"_33":
+{
+	"frame": {"x":1777,"y":1,"w":220,"h":366},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":25,"w":220,"h":366},
+	"sourceSize": {"w":365,"h":440},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "smile-1.png",
+	"format": "RGBA8888",
+	"size": {"w":1998,"h":368},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:203bebf1f3f575ad9dd1f975ecea9c34:b1e7d0d230b1ad1e6e0aed41fc7a41db:26e384f73626d93cea8b00ad74e4b0a6$"
+}
+}

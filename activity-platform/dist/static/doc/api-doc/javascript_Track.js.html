@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: javascript/Track.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: javascript/Track.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import flymeTrack from '@flyme/track';
+import businessFit from '@flyme/business-fit/build/index';
+import {debounce} from '../../common/lib/ba-throttle-debounce.js';
+import Native from './native.js';
+import utils from './utils.js';
+
+const allParams = businessFit.util.allParams;
+
+var business = allParams.business || 2;
+var _from = allParams.from || 1;
+
+flymeTrack.init(false);
+flymeTrack.set('connectionType', businessFit.getNetworkType());
+
+/**
+ * 埋点的相关操作的封装
+ * @module Track
+ */
+var Track = {
+  commonParams: {
+    appstore_activity_type: 1,
+    flyme_business_source: business,
+    appstore_block_source:1,
+    date: utils.timeFormat(new Date,'yy/mm/dd'),
+    from: _from,
+    page: allParams.campaignId
+  },
+  baseExposure:function(name,extra){
+    var params = $.extend({
+          action: name,
+          imei: Native.getImei()
+        },this.commonParams,extra);
+
+    this.transformParams &amp;&amp; this.transformParams(params);
+
+    flymeTrack.log(params);
+  },
+  log: function(datas){
+    datas = $.extend({
+        imei: Native.getImei()
+      }, this.commonParams, datas);
+
+    this.transformParams &amp;&amp; this.transformParams(datas);
+
+    flymeTrack.log(datas);
+  },
+  exposurePage: function(){
+    this.baseExposure('exposure');
+  },
+  hitPlay: function(isInstall){
+    this.baseExposure('hit_play', {user_type:isInstall});
+  },
+  installWeb: function(){
+    this.baseExposure('install_web');
+  },
+  installStatus: function(isSuccess,type){
+    type = type == null ? 1 : type;
+
+    this.baseExposure('install_status_web', {
+      status: isSuccess ? 1: 0,
+      type: type
+    });
+  },
+  openWeb: function(info) {
+    this.baseExposure('open_web', info);
+  },
+  shoot: function(num){
+    var extra;
+    if(typeof num != 'undefined'){
+      extra = {number: num};
+    }
+    this.baseExposure('hit_prize',extra);
+  },
+  clickArticle: function(url,title){
+    this.baseExposure('click_article', {
+      url: url,
+      article_name: title
+    });
+  },
+  exClick: function(){
+    this.baseExposure('ex_dialog_notinstall');
+  },
+  exClickCommit: function(){
+    this.baseExposure('ex_click_commit');
+  },
+  exClickCancel: function(){
+    this.baseExposure('ex_click_cancel');
+  },
+  exposeWelfare: function(dom){
+    var winH = $(window).height();
+    var offsetCache = {},
+        posArray,
+        self = this;
+
+    $(dom).forEach(function(item){
+      var $item = $(item),
+          offset = $item.offset(),
+          temp = offsetCache[offset.top];
+
+      if(!temp)
+        temp = offsetCache[offset.top] = [];
+
+      var $a = $item.find('a');
+      temp.push({url:$a.attr('href'),title:$a.attr('title')});
+    });
+
+    posArray = Object.keys(offsetCache).sort(function(a,b){
+      return a > b;
+    });
+
+    var _innerScroll = debounce(200,function (){
+      var scrollY = window.scrollY,
+          captureItems = [];
+
+      posArray = posArray.filter(function(item,idx){
+        if(winH + scrollY > item){
+          captureItems.push({
+            posY: item,
+            datas: offsetCache[item]
+          });
+          return false;
+        }
+        return true;
+      });
+
+      if(captureItems.length){
+        captureItems.forEach(function(item){
+          item.datas.forEach(function(data){
+            self.baseExposure('exposed_welfare', {
+              url: data.url,
+              article_name: data.title,
+              pos: item.posY
+            });
+          });
+        })
+      }
+
+      if(posArray.length == 0){
+        $(window).off('scroll',_innerScroll);
+      }
+    });
+
+    $(window).scroll(_innerScroll);
+  }
+};
+
+function isEmpty(val){
+  if(val == null || val === '')
+    return true;
+}
+
+const pageSourceInfo = allParams.uxip_page_source_info || {}
+let pushId = pageSourceInfo.push_id || allParams.pushId,
+    block_name = pageSourceInfo.block_name || allParams.blockName,
+    block_type = pageSourceInfo.block_type ||  allParams.blockType,
+    block_id = pageSourceInfo.block_id || allParams.blockId;
+
+if(!isEmpty(pushId))
+  Track.commonParams['push_id'] = pushId;
+if(!isEmpty(block_name))
+  Track.commonParams['block_name'] = block_name;
+if(!isEmpty(block_type))
+  Track.commonParams['block_type'] = block_type;
+if(!isEmpty(block_id))
+  Track.commonParams['block_id'] = block_id;
+
+Native.Track = Track;
+
+let isExposure;
+
+window.exposurePage = function(){
+  if(!isExposure){
+    isExposure = true;
+    Track.exposurePage();
+  }
+}
+
+module.exports = Track;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-ajax.html">ajax</a></li><li><a href="module-AppsGenerator.html">AppsGenerator</a></li><li><a href="module-AwardDialog.html">AwardDialog</a></li><li><a href="module-Dom.html">Dom</a></li><li><a href="module-httpService.html">httpService</a></li><li><a href="module-Lottery.html">Lottery</a></li><li><a href="module-Mock.html">Mock</a></li><li><a href="module-module_app_index.html">module/app/index</a></li><li><a href="module-Native.html">Native</a></li><li><a href="module-oauthService.html">oauthService</a></li><li><a href="module-showVerifyCodeDlg.html">showVerifyCodeDlg</a></li><li><a href="module-stateMachine.html">stateMachine</a></li><li><a href="module-tools.html">tools</a></li><li><a href="module-Track.html">Track</a></li><li><a href="module-utils.html">utils</a></li></ul><h3>Classes</h3><ul><li><a href="AppsInstallInit.html">AppsInstallInit</a></li><li><a href="ExtraWelfareList.html">ExtraWelfareList</a></li><li><a href="module-AppsGenerator-AppsGenerator.html">AppsGenerator</a></li></ul><h3>Namespaces</h3><ul><li><a href="module-AwardDialog-AwardDialog.html">AwardDialog</a></li><li><a href="module-Mock-Mock.html">Mock</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Jul 12 2018 17:29:08 GMT+0800 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

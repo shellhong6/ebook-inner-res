@@ -1,0 +1,14 @@
+<ul class="applist clearfix">
+  {{#each applist}}
+    {{#unless app}}
+      <li></li>
+    {{/unless}}
+    {{#if app}}
+      <li>
+          <i class="app-logo lazyload" data-original="{{app.icon}}"></i>
+          <p class="text-overflow">{{app.name}}</p>
+          <button class="install-btn" data-exposure="1" data-apkname="{{app.name}}" data-pkgname="{{app.packageName}}" data-appid="{{app.id}}" data-version="{{app.versionCode}}" data-iscpd="{{iscpd}}" data-pos={{@index}} data-track="{{trackUrl}}" data-track-info='{"pos":"{{inc @index}}","appname":"{{app.name}}","business_type":"{{businessType}}"}'>安装</button>
+      </li>
+    {{/if}}
+  {{/each}}
+</ul>

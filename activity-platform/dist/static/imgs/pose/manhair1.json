@@ -1,0 +1,44 @@
+{"frames": {
+
+"hair0.png":
+{
+	"frame": {"x":616,"y":1,"w":178,"h":201},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":178,"h":201},
+	"sourceSize": {"w":178,"h":201}
+},
+"hair1.png":
+{
+	"frame": {"x":230,"y":1,"w":193,"h":204},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":193,"h":204},
+	"sourceSize": {"w":193,"h":204}
+},
+"hair2.png":
+{
+	"frame": {"x":424,"y":1,"w":191,"h":202},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":191,"h":202},
+	"sourceSize": {"w":191,"h":202}
+},
+"hair3.png":
+{
+	"frame": {"x":1,"y":1,"w":228,"h":214},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":228,"h":214},
+	"sourceSize": {"w":228,"h":214}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "manhair1.png",
+	"format": "RGBA8888",
+	"size": {"w":795,"h":216},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:54c76ff40424d69d4c870fe2f23dd61b:1/1$"
+}
+}

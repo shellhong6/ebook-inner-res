@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link title="网" type="application/opensearchdescription+xml" rel="search" href="../open_search.xml" />
+<script>
+	var picture_image_path_v1 = "http://al.zhaoxi.cn";
+var urlPrefix=new function(){this.www='http://www.zhaoxi.com';this.cdn='http://al.zhaoxi.cn';this.manhua='http://manhua.zhaoxi.com'};</script><title>移动应用下载 - 分享文档 发现价值</title>
+<meta name="description" content="网是全球最大的中文社会化阅读分享平台，拥有商业,教育,研究报告,行业资料,学术论文,认证考试,星座,心理学等数亿实用文档和书刊杂志。" />
+<meta name="keywords" content=",文档分享,论文,研究报告,商业工具,认证考试" />
+<meta name="Author"  content="网" />
+
+<link rel="icon" href="./images_cn/favicon.ico?rand=20180711" type="image/x-icon" />
+<link rel="shortcut icon" href="./images_cn/favicon.ico?rand=20180711" type="image/x-icon" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="./js/html5.js?rand=20180711"></script>
+<![endif]-->
+<link href="./css/common_flat.css" rel="stylesheet" type="text/css" media="screen, projection"/>
+<link rel="stylesheet" href="./css/iphone/mobileAppDown_v1.css?rand=20180711" />
+</head>
+<body>
+<div class="doc_hd">
+	<div class="theme_header">
+		<div class="item-logo" >
+			<h1>
+				<a href="http://www.zhaoxi.com"></a>
+			</h1>
+		</div>
+		<div class="item_search">
+			<form method="get" action="http://www.zhaoxi.com/search.do">
+			<input type="hidden" name="searchcat" id="searchcat" value="1001" />
+			<input type="hidden" value="p" id="searchType_banner" name="searchType_banner">
+				<div class="search_bd">
+					<div id="searchTab" class="search_trigger">
+						<ul>
+							<li class="search_tab selected" data-searchtype="doc">
+								<a href="javascript:void(0);">文档</a>
+							</li>
+							<li class="search_tab" data-searchtype="user">
+								<a href="javascript:void(0);">用户</a>
+							</li>
+						</ul>
+						<span class="search_arrow"><i></i></span>
+					</div>
+					<div class="search_panel">
+						<div class="search_button">
+						<button type="submit" onclick="return searchNew();" class="btn_search iconfont">搜索</button>
+						</div>
+						<div class="search_panel_fields">
+							<input type="text" name="nkey" tabindex="1" autocomplete="off" placeholder="在五亿文档库里搜索文档"  maxlength="100" id="topsearch" baidusug="2">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<a target="_blank" href="http://www.zhaoxi.com/helpcenter/doc_help_xssl.do" class="quick_help">帮助</a>
+		<div class="sc_sf_btn"><a class="sc_btn" href="http://www.zhaoxi.com/app.zhaoxi.upload/index" title="我要上传">我要上传</a><span class="pad_line"></span><a class="sf_btn" href="http://shufang.zhaoxi.com" title="书房" target="_blank">书房</a></div></div>
+	<div class="global_nav">
+		<div class="top_nav_wrap">
+			<div class="top_nav_info">
+				<ul class="nav_ul nav_main_list" >
+		 			<li class="" ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com" >首页</a></li>
+		 			<li class="doc_classic"><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/list.html" id="navClassMore" ><span class="i_arrow">文档分类</span></a></li>
+		 			<li class="doc_classic"><a  onmousedown="return inpmv();" href="http://www.zhaoxi.com/topicshow.do" >专题</a></li>
+		 			<li class=""><a onmousedown="return inpmv();" href="http://shequ.zhaoxi.com" >社区</a></li>
+		 			<li class="cur"><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/mobile_web/index.jsp" >客户端</a></li>
+					<li class="busy_tools"><a onmousedown="return inpmv();" href="http://docstore.zhaoxi.com">商业工具</a><span class="pad_line"></span></li>
+				</ul>
+				<ul class="nav_ul nav_sub_list">
+					<li class=""><a onmousedown="return inpmv(5560);" href="http://jz.zhaoxi.com">建筑</a></li>
+					<li class="" style="position:relative;overflow:visible;"><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/bcase/index.do">创业</a><span class="ico_upgrade"></span></li>
+					<li class=""><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/minicase/index.do">微案例</a></li>
+					<li class="" style="position:relative;overflow:visible;"><a href="http://www.zhaoxi.com/salary/index.do" target="_blank">薪酬</a><span class="ico_nav_new"></span></li>
+					<li class=""><a onmousedown="return inpmv();" href="http://huiyi.zhaoxi.com"  >会议</a></li>
+					<li class=""><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/gzzj/index.do" >总结</a></li>
+					<li class=""><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/zuowen/index.do" >作文</a></li>
+					<li class=""><a onmousedown="return inpmv();" href="http://yiliao.zhaoxi.com" >医疗</a></li>
+					<li class=""><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/kyzq/index.do" >考研</a></li>
+					<li style="position:relative;overflow:visible;"><a onmousedown="return inpmv();" href="http://v.zhaoxi.com" >素材</a></span></li>
+					<!-- <li class="" style="position:relative;overflow:visible;"><a href="http://pic.zhaoxi.com" target="_blank">图片</a><span class="ico_nav_new"></span></li> -->
+					<li class="" style="position:relative;overflow:visible;"><a href="../index.html" target="_blank">漫画</a></li>
+					<li class="" style="position:relative;overflow:visible;"><a href="http://hetong.zhaoxi.com" target="_blank">合同</a></span></li> 
+					<li class="" style="position:relative;overflow:visible;"><a href="http://baogao.zhaoxi.com" target="_blank">报告</a></span></li> 
+				</ul>
+				<div id="navClassSkills" class="new_nav_skills nav_skills_class" style="display:none;">
+					<div class="nav_skills_bd">
+						<span class="nav_skills_Arr"></span>
+						<div class="class_list clear">
+					<ul>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10008-0-0-0-0-1.html" title="论文" >论文</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10003-0-0-0-0-1.html" title="中学教育" >中学教育</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10004-0-0-0-0-1.html" title="高等教育" >高等教育</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10006-0-0-0-0-1.html" title="外语学习" >外语学习</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10017-0-0-0-0-1.html" title="IT计算机" >IT计算机</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10027-0-0-0-0-1.html" title="研究报告" >研究报告</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10028-0-0-0-0-1.html" title="办公文档" >办公文档</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10023-0-0-0-0-1.html" title="行业资料" >行业资料</a></li>
+							</ul>
+							<ul>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10034-0-0-0-0-1.html" title="生活休闲" >生活休闲</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10019-0-0-0-0-1.html" title="建筑/环境" >建筑/环境</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10018-0-0-0-0-1.html" title="法律/法学" >法律/法学</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10020-0-0-0-0-1.html" title="通信/电子" >通信/电子</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10005-0-0-0-0-1.html" title="研究生考试" >研究生考试</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-11926-0-0-0-0-1.html" title="经济/贸易/财会" >经济/贸易/财会</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10002-0-0-0-0-1.html" title="幼儿/小学教育" >幼儿/小学教育</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-11937-0-0-0-0-1.html" title="管理/人力资源" >管理/人力资源</a></li>
+							</ul>
+							<ul class="mar0" >
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10024-0-0-0-0-1.html" title="汽车/机械/制造" >汽车/机械/制造</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10022-0-0-0-0-1.html" title="医学/心理学" >医学/心理学</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10007-0-0-0-0-1.html" title="资格/认证考试" >资格/认证考试</a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-11936-0-0-0-0-1.html" title="金融/证券 " >金融/证券 </a></li>
+								<li ><a onmousedown="return inpmv();" href="http://www.zhaoxi.com/l-10031-0-0-0-0-1.html" title="文学/艺术/军事/历史" >文学/艺术/军事/历史</a></li>
+								<li class="f_l"><a onmousedown="return inpmv();" href="http://tushu.zhaoxi.com" title="图书" >图书</a></li>
+								<li class="f_l"><a onmousedown="return inpmv();" href="http://zazhi.zhaoxi.com" title="杂志" >杂志</a></li>
+								<li class="f_l"><a onmousedown="return inpmv();" href="http://huiyi.zhaoxi.com" title="会议" >会议</a></li>
+								<li class="f_l"><a onmousedown="return inpmv();" href="http://yiliao.zhaoxi.com" title="医疗" >医疗</a></li>
+								<li class="f_l"><a onmousedown="return inpmv();" href="../index.html" title="漫画" >漫画</a></li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="top_nav_item">
+				<ul class="nav_reg">
+					<li><a class="nav_login" href="javascript:void(0)" onclick="showlogin()">登录</a></li>
+						<li><a class="nav_register" href="http://www.zhaoxi.com/app/forward?forward=register">注册</a></li>
+					</ul>
+				</div>
+		</div>
+ 	</div>
+ 	</div>
+<div id="medalOrTaskPopBox" class=.zhaoxi.op" style="display: none"></div><script type="text/javascript" src="./js/jquery-merge.min.js?rand=20180711"></script>
+<script type="text/javascript" src="./js/common_v1.js?rand=20180711"></script>
+<div class="wrapper">
+	<div id="bookshelf" class="showBox iosLib">
+		<div class="text text1"></div>
+		<div class="text text2"></div>
+		<div class="text text3"></div>
+		<div class="iosAppDown">
+			<a onmousedown="return inpmv(4007);"  class="downloadBtn forIos download_ios" href="http://itunes.apple.com/cn/app/id473506754?l=en&ls=1&mt=8" target="_blank"></a>
+			<a onmousedown="return inpmv(4008);"  class="downloadBtn forAndroid download_az" href="http://download1.zhaoxi.cn/android.zhaoxi.eaderX6_3.9.1.zhaoxi.apk"></a>
+			<a class="downloadBtn forIos qhBtn" href="zhushou360://type=apk&name=书房&icon=http://www.zhaoxi.com/images_cn/iphone/ico_bookstore72x72.png&url=http://download1.zhaoxi.cn/android.zhaoxi.eaderX6_3.9.1.zhaoxi.apk" target="_blank"></a>
+			<div class="downloadBtn forDimcode">
+				<img style="width:90px;height:90px;" src="./images_cn/iphone/downloadApp/libCode.png?a=1" />
+				<span class="downSupport"></span>
+			</div>
+			<ul class="officialSns">
+				<li>
+					<a id="weixinDimcode" class="ico_wx" style="text-decoration:none;" href="javascript:void(0);">
+						<span></span>官方微信
+					</a>
+					<div class="weixinDimpic">
+						<img src="./images_cn/iphone/downloadApp.zhaoxi.weixin.png" alt="" />
+					</div>
+				</li>
+				<li>
+					<a class="ico_wb" href="http://e.weibo.com/1644855885/A7UQoglIa" target="_blank">
+					<span></span>新浪微博
+					</a>
+				</li>
+				<li>
+					<a class="ico_txwb" href="http://t.qq.com.zhaoxi.012" target="_blank">
+					<span></span>腾讯微博
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="ui_sp"></div>
+	<div class="libDiscrip clear">
+		<div class="colLeft">
+			<h3><img src="./images_cn/iphone/downloadApp/banner_text4_new.png" alt="" /></h3>
+			<p>书房提供近五亿份的文档用户免费阅读，是面向全球的在线<br />
+C2C文档分享网站。书房追求极致的阅读体验，支持ePub/txt/<br />
+pdf/umd/office办公系列的阅读，并且提供了TTS语音阅读的<br />
+功能。在特殊情景下，让用户解放双眼，用耳朵听书。<br />
+让文档随身阅读时的愿景，书房云备份功能，<br />
+让文档在电脑/手机/PAD之间同步，实现多屏互动。</p>
+		</div>
+		<div class="colRight">
+			<h3><img src="./images_cn/iphone/downloadApp/banner_text5_new.png" alt="" /></h3>
+			<ul>
+				<li>多文档格式支持、阅读流畅；</li>
+				<li>文档免费阅读，帮助你进行学习及实践；</li>
+				<li>TTS语音引擎，让图书从此读出来；</li>
+				<li>云服务，同步、备份你阅读的文档；</li>
+				<li>简单易用的手势操作：目录导航、添加或删除书签、亮度 <br/>调节、快捷跳页、分享文档给好友.....更多功能等你体验。</li>
+			</ul>
+		</div>
+	</div>
+	<div id="bookReader" class="grayBg">
+		<div class="showBox pad40">
+			<h4>
+				<img src="./images_cn/iphone/downloadApp/banner_text7_new.png" alt="" />
+				<img src="./images_cn/iphone/downloadApp/banner_text6_new.png" alt="" />
+			</h4>
+			<div class="iosOpenReader">
+				<p>与中科院模式识别国家重点实验室联合打造听书功能，把文字有一定的语调的读出来，方便大家在开车、跑步等不方便阅读的时候听书，同时盲人朋友也可以通过听书来享受阅读的乐趣。一个字：酷！</p>
+				<dl class="mainItem">
+					<dt class="fwb">主要特色</dt>
+					<dd>“听书”</dd>
+					<dd>海量书源，应有尽有</dd>
+					<dd>本地内容同步，方便易用</dd>
+					<dd>支持多种格式</dd>
+				</dl>
+				<div class="iosAppDown iosAppDow">
+					<a onmousedown="return inpmv(4006);"  href="http://itunes.apple.com/cn/app/id490618045?mt=8" target="_blank" class="downloadBtn forIos" ></a>
+					<div class="downloadBtn forDimcode">
+						<img alt="" src="./images_cn/iphone/downloadApp/readerIphoneCode.png" />
+						<span class="downSupport noAndroid"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+
+
+<div class="edubox_footer1" id="foot">
+	<div class="fontnr">
+		<a href="http://www.zhaoxi.com/about/aboutus.jsp" target="_blank" title="关于我们">关于我们</a> <span>-</span>
+		<!--  <a href="http://blog.zhaoxi.com" target="_blank" title="博客">博客</a> <span>-</span> -->
+		<a href="http://www.zhaoxi.com/about/doc_qqcl.jsp" target="_blank" title="侵权处理">侵权处理</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/doc_mzsm.jsp" target="_blank" title="免责声明">免责声明</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/doc_ysbg.jsp" target="_blank" title="隐私保护">隐私保护</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/doc_wzdt.jsp" target="_blank" title="网站地图">网站地图</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/app/about/mediareport" target="_blank" title="媒体关注">媒体关注</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/guanggao.jsp" target="_blank" title="广告刊例">广告刊例</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/doc_jrwm.jsp" target="_blank" title="加入我们">加入我们</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/company/index.do" target="_blank" title="合作机构">合作机构</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/doc_yqlj.jsp" target="_blank" title="友情链接">友情链接</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/doc_lxwm.jsp" target="_blank" title="联系我们">联系我们</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/helpcenter/doc_help_xssl.do" target="_blank" title="帮助中心">帮助中心</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/helpcenter/toHelpCenter.do" target="_blank" title="常见问题">常见问题</a>
+	</div> 
+	
+  	<div class="fontnr_one fontnr">
+  		<span></span> 
+  		
+  		<span class="qq_contact" id="qqOnlineContact">
+			<img border="0" style="CURSOR: pointer" onclick="javascript:window.open('http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAwNDI0MV80NzY5NjhfODAwMDA0MjQxXzJf');" src="./images_cn/zx_qq.gif" />
+		</span>
+  	</div>
+		<div class=zhaoxippMode>
+  		<a class="appLink" href="http://www.zhaoxi.com/mobile_web/index.jsp" title="下载书房APP" target="_blank">
+	  		<img src="./images_cn/ico_app_bookshop83x83.png" style="width:71px;height:71px;" alt="书房">
+	  		<p class="txt1">书房</p>
+	  		<p class="txt2">5亿文档免费下</p>
+  		</a>
+  		<div class="appDimCode">
+  			<img src="./images_cn/iphone/subscription/wx_img6.png" alt="书房">
+  			<dl>
+  				<dt>扫描下载APP</dt>
+  				<dd>支持</dd>
+  				<dd>iphone</dd>
+  				<dd>ipad</dd>
+  				<dd>Android</dd>
+  			</dl>
+  		</div>
+  		<div class="line"></div>
+  		<div class="appDimCode">
+  			<img src="./images_cn/iphone/subscription/wx_img7.png" alt="书房">
+  			<dl>
+  				<dt class='txt3'>扫描关注网</dt>
+  				<dd>微信号.zhaoxi.ang</dd>
+  				<dd>随时赢取精美礼品</dd>
+  			</dl>
+  		</div>
+		</div>
+
+	</div>
+
+<script type="text/javascript" src="./js/newDocin/index_zhuce_new.js?rand=20180711"></script>
+<div id="loginwindow"></div>
+<div id="wxwindow"></div>	
+<script type='text/javascript'>
+_pageId=250;
+</script>
+
+<script type="text/javascript">
+(function(){
+	jQuery("#weixinDimcode").hover(
+	function(){
+		jQuery(".weixinDimpic").show();
+	},
+	function(){
+		jQuery(".weixinDimpic").hide();
+	})
+})();
+</script>
+<script type="text/javascript" src="./js/pagemodulestat.js?rand=20180711"></script>
+<script src="http://zhushou.360.cn/script/360mobilemgrdownload.js"></script>
+
+
+
+
+
+
+<script>
+   
+   
+   
+   
+
+	 
+	ga('require', 'displayfeatures');
+	
+	
+	 
+
+</script>
+<script type="text/javascript">
+	var url;
+	
+	url = "/app/jquery/hadoopLog?hadoop_stat_type_id=null&hadoop_stat_uid=null&hadoop_stat_cat_id=null&hadoop_stat_doc_id=null&hadoop_stat_doclist_id=null";
+	
+	jQuery.post(url,null,null);
+</script></body>
+</html>

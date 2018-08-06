@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link title="网" type="application/opensearchdescription+xml" rel="search" href="../open_search.xml" />
+	<script>
+		var picture_image_path_v1 = "http://al.zhaoxi.cn";
+		var urlPrefix = new function() {
+			this.www = 'http://www.zhaoxi.com';
+			this.cdn = 'http://al.zhaoxi.cn';
+			this.manhua = 'http://manhua.zhaoxi.com'
+		};
+	</script>
+	<title>找回密码</title>
+	<link href="./css/registration/zclc_style.css?rand=20180711" rel="stylesheet" type="text/css" />
+	<link href="./css/common_flat.css" rel="stylesheet" type="text/css" media="screen, projection" />
+	<style>
+		.edubox_footer1 {
+			background: #fcfcfc;
+		}
+
+		.fondPwd {
+			width: 812px;
+			height: 336px;
+			margin: 16px auto;
+			border: 1px solid #e1e1e1;
+		}
+
+		.fondPwdT {
+			height: 40px;
+			line-height: 40px;
+			padding: 0 15px;
+			font-size: 16px;
+			background: #f1f1f1;
+			border-bottom: 1px solid #e1e1e1;
+		}
+
+		.fondPwdB {
+			padding-top: 66px;
+		}
+
+		.fondPwdB table {
+			width: 100%;
+		}
+
+		.fondPwdB th {
+			width: 240px;
+			font-size: 14px;
+			font-weight: normal;
+			text-align: right;
+		}
+
+		.fondPwdB td {
+			position: relative;
+			float: left;
+		}
+
+		.fondPwdB .txt {
+			width: 210px;
+			padding: 0 6px;
+			height: 26px;
+			line-height: 26px;
+			border: 1px solid #7f9db9;
+		}
+
+		.fondPwdB .tips {
+			height: 24px;
+			padding-right: 20px;
+			margin-top: 4px;
+			line-height: 24px;
+			color: #ff7701;
+			background: #fff6ec;
+			border: 1px solid #f4d5b3;
+		}
+
+		.fondPwdB .tips img {
+			float: left;
+			margin: 3px 5px 0;
+		}
+
+		.fondPwdB .btn {
+			width: 112px;
+			height: 36px;
+			line-height: 36px;
+			margin-top: 20px;
+			font-size: 16px;
+			text-align: center;
+			color: #fff;
+			background: #3086f2;
+			border: 0;
+			border-radius: 2px;
+			cursor: pointer;
+		}
+
+		.fondPwdB .btn:hover {
+			background: #276ded;
+		}
+
+		.emailist {
+			+width: 224px;
+		}
+	</style>
+	<SCRIPT language=javascript type=text/javascript>
+		function checkMail() {
+			var v = document.getElementById("login_email").value;
+			var desc = '';
+			if (v.indexOf(" ") > -1) {
+				desc = "邮箱不能包含空格!";
+			} else {
+				v = trim(v);
+				if (v == '') {
+					desc = '请您输入邮箱!!';
+				} else if (!checkEmail(v)) {
+					desc = '您输入的邮箱格式不正确,请重新输入。';
+				} else if (new RegExp("[,]", "g").test(v)) {
+					desc = '您输入的邮箱含有非法字符,请重新输入!'
+				} else if (v.length > 100) {
+					desc = '您输入的邮箱长度应小于30个字符,请重新输入';
+				}
+			}
+
+			if (desc == '') {
+				document.getElementById("form1").submit();
+			} else {
+				alert(desc);
+				document.getElementById("login_email").select();
+				return false;
+			}
+		}
+		/* 4.1.5忘记密码1 */
+		function checkName() {
+			var v = document.getElementById("login_email").value;
+			var desc = '';
+			if (v.indexOf(" ") > -1) {
+				desc = "邮箱不能包含空格!";
+			} else {
+				v = trim(v);
+				if (v == '') {
+					desc = '请输入登录邮箱或手机号码!!';
+				} else {
+					var telNumPass = checkTelB.zhaoxi.v);
+				var num = parseInt(v);
+
+				if (v == num) {
+					if (v.length != 11) {
+						desc = '您输入的手机号格式不正确,请重新输入。';
+					} else if (!telNumPass) {
+						desc = '您输入的手机号格式不正确,请重新输入。';
+					}
+				} else {
+					if (!checkEmail(v)) {
+						desc = '您输入的邮箱格式不正确,请重新输入。';
+					} else if (new RegExp("[,]", "g").test(v)) {
+						desc = '您输入的邮箱含有非法字符,请重新输入!'
+					} else if (v.length > 100) {
+						desc = '您输入的邮箱长度应小于30个字符,请重新输入';
+					}
+				}
+			}
+		}
+		if (desc == '') {
+			document.getElementById("form1").submit();
+		} else {
+			jQuery('.tips span').html(desc);
+			document.getElementById("login_email").select();
+			return false;
+		}
+		}
+
+		function enterKey1(evt) {
+			evt = (evt) ? evt : ((window.event) ? window.event : "");
+
+			if (evt.keyCode == 13) {
+				if (evt.preventDefault) { //阻止默认浏览器动作(W3C)
+					evt.preventDefault();
+				} else { //IE中阻止函数器默认动作的方式
+					window.event.returnValue = false;
+					return false;
+				}
+
+				checkName();
+			} else if (evt.charCode == 32) {
+				evt.returnValue = false;
+				return false;
+			} else if (evt.keyCode == 32) {
+				evt.returnValue = false;
+				return false;
+			}
+		}
+
+		/* 4.1.5忘记密码1 */
+	</SCRIPT>
+
+	<body>
+
+		<script type="text/javascript">
+			function kDefaultFocus() {
+				var d = document,
+					k = d.getElementById('topsearch');
+				if (!k) return false;
+				k.focus()
+			};
+			kDefaultFocus();
+		</script>
+		<div id="medalOrTaskPopBox" class=.zhaoxi.op " style="display: none "></div>
+<style type="text/css ">
+	.bdSug_app {display:none;}
+</style>
+<!-- 仿微博通知 -->
+<script type="text/javascript ">
+	feedNoticeFix({top:44});
+</script>
+<script type="text/javascript ">
+if(document.getElementById("feedNotice ")){
+	document.getElementById("feedNotice ").style.display="none ";
+}
+//var if_stat_topic = false;
+var ifUserLogin = 0;
+var successShow = 1;
+var userId = 0;
+var utype = -1;
+var isnew =0;
+
+successShow = 0;
+
+var hour1 = 12,minutes1 = 28,second1 = 13;
+var hour2 = 12,minutes2 = 28,second2 = 13;
+//用于卡通股票默认未订制
+var stock = 0;
+var cartoon = 0;
+</script>
+<script type="text/javascript ">
+	jQuery(function(){
+		jQuery("#login_email ").mailAutoComplete();
+	})
+</script>
+
+<div class="wrapper ">
+	<form action="http://manhua.zhaoxi.com/app/findPassword " method="post " name="form1 " id="form1 ">
+		<div class="fondPwd ">
+			<div class="fondPwdT ">找回密码</div>
+			<div class="fondPwdB ">
+				<!-- 4.1.5忘记密码1 -->
+				<table>
+					<tbody>
+						<tr>
+							<th>请输入登录邮箱或手机号码：</th>
+							<td style="z-index:3; "><input class="txt " name="login_email " id="login_email " type="text " size="30 " onkeypress="return enterKey1(event); "/></td>
+						</tr>
+						<tr>
+							<th></th>
+							<td style="z-index:2; "><div class="tips "><img src="./images_cn/email/text_faq.gif "/>
+							<span>请您输入Email或手机号码！</span>
+							</div></td>
+						</tr>
+						<tr>
+							<th></th>
+							<td style="z-index:1; "><input class="btn " type="button " value="下一步 " onclick="checkName(); "/></td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- 4.1.5忘记密码1 -->
+				</div>
+		</div>
+	</form>
+</div>
+
+
+<!--页尾-->
+<div class="edubox_footer1 " id="foot ">
+	<div class="fontnr ">
+		<a href="http://www.zhaoxi.com/about/aboutus.jsp " target="_blank " title="关于我们 ">关于我们</a> <span>-</span>
+		<!--  <a href="http://blog.zhaoxi.com " target="_blank " title="博客 ">博客</a> <span>-</span> -->
+		<a href="http://www.zhaoxi.com/about/doc_qqcl.jsp " target="_blank " title="侵权处理 ">侵权处理</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/doc_mzsm.jsp " target="_blank " title="免责声明 ">免责声明</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/doc_ysbg.jsp " target="_blank " title="隐私保护 ">隐私保护</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/doc_wzdt.jsp " target="_blank " title="网站地图 ">网站地图</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/app/about/mediareport " target="_blank " title="媒体关注 ">媒体关注</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/guanggao.jsp " target="_blank " title="广告刊例 ">广告刊例</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/doc_jrwm.jsp " target="_blank " title="加入我们 ">加入我们</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/company/index.do " target="_blank " title="合作机构 ">合作机构</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/doc_yqlj.jsp " target="_blank " title="友情链接 ">友情链接</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/about/doc_lxwm.jsp " target="_blank " title="联系我们 ">联系我们</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/helpcenter/doc_help_xssl.do " target="_blank " title="帮助中心 ">帮助中心</a> <span>-</span>
+		<a href="http://www.zhaoxi.com/helpcenter/toHelpCenter.do " target="_blank " title="常见问题 ">常见问题</a>
+	</div>
+
+  	<div class="fontnr_one fontnr ">
+  		<span></span>
+  		<span class="qq_contact " id="qqOnlineContact ">
+			<img border="0 " style="CURSOR: pointer " onclick="javascript:window.open( 'http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAwNDI0MV80NzY5NjhfODAwMDA0MjQxXzJf'); " src="./images_cn/zx_qq.gif " />
+		</span>
+  	</div>
+		<div class=zhaoxippMode>
+  		<a class="appLink " href="http://www.zhaoxi.com/mobile_web/index.jsp " title="下载书房APP " target="_blank ">
+	  		<img src="./images_cn/ico_app_bookshop83x83.png " style="width:71px;height:71px; " alt="书房 ">
+	  		<p class="txt1 ">书房</p>
+	  		<p class="txt2 ">5亿文档免费下</p>
+  		</a>
+  		<div class="appDimCode ">
+  			<img src="./images_cn/iphone/subscription/wx_img6.png " alt="书房 ">
+  			<dl>
+  				<dt>扫描下载APP</dt>
+  				<dd>支持</dd>
+  				<dd>iphone</dd>
+  				<dd>ipad</dd>
+  				<dd>Android</dd>
+  			</dl>
+  		</div>
+  		<div class="line "></div>
+  		<div class="appDimCode ">
+  			<img src="./images_cn/iphone/subscription/wx_img7.png " alt="书房 ">
+  			<dl>
+  				<dt class='txt3'>扫描关注网</dt>
+  				<dd>微信号.zhaoxi.ang</dd>
+  				<dd>随时赢取精美礼品</dd>
+  			</dl>
+  		</div>
+		</div>
+
+	</div>
+
+<script type="text/javascript " src="./js/newDocin/index_zhuce_new.js?rand=20180711 "></script>
+<div id="loginwindow "></div>
+<div id="wxwindow "></div>
+</body>
+</html>

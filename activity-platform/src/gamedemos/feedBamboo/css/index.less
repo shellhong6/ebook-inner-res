@@ -1,0 +1,635 @@
+@import '../../common/css/base.css';
+
+@bg: '../images/bgOnline.jpeg';
+@flabellum: '../images/flabellum.png';
+@winnowerholder: '../images/winnowerholder.png';
+@car: '../images/car.png';
+@signInBtn: '../images/signinBtn.png';
+@progressBar: '../images/progress.png';
+@stageIcon: '../images/stage.png';
+@lastStageIcon: '../images/laststage.png';
+@prizeIcon: '../images/prize.png';
+@foodIcon: '../images/food.png';
+@panda: '../images/panda.png';
+@appStorebg: '../images/appstore.png';
+@finishStage: '../images/finishStage.png';
+@weizuziIcon: '../images/weizhuzi.png';
+@lotteryAwardIcon: '../images/lotteryaward.png';
+@comeTomorrowIcon: '../images/cometomorrow.png';
+@menusIcon: '../images/menu.png';
+@menuExplainIcon: '../images/explain.png';
+@menuAwardsIcon: '../images/myawards.png';
+@arrowTipIcon: '../images/arrow.png';
+@downArrowTipIcon: '../images/downarrow.png';
+html{
+  min-height: 100%;
+}
+body{
+  color: #fff;
+  -webkit-text-size-adjust: none;
+  text-align: center;
+  font-size: 13px;
+  background-color: #fff;
+}
+img{
+  vertical-align: bottom;
+}
+i{
+  display: inline-block;
+  font-style: normal;
+}
+.none-visible{
+  visibility: hidden;
+}
+.container{
+  background: url(@bg) no-repeat top center;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  min-height: 357px;
+  padding-top: 1px;
+  position: relative;
+}
+.signin-area{
+  background-color: #d88346;
+  border: 2px solid #8e4d23;
+  border-radius: 20px;
+  width: 123px;
+  height: 27px;
+  margin: 27px auto 0;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 1px;
+  position: relative;
+}
+.sign-app{
+  border-radius: 50%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 21px;
+  width: 21px;
+  vertical-align: middle;
+  margin-right: 5px;
+  background-color: #fff;
+}
+.signin-tip{
+  font-size: 10px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 7px 0 7px 28px;
+  line-height: 1.2;
+}
+.game-tip{
+  margin-top: 5px;
+  color: #8e4d23;
+  font-size: 9px;
+}
+.flabellum{
+  background: url(@flabellum) no-repeat;
+  background-size: contain;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  top: -13px;
+}
+.winnowerholder{
+  background: url(@winnowerholder) no-repeat;
+  background-size: contain;
+  width: 33px;
+  height: 51px;
+}
+.winnower{
+  position: relative;
+  display: inline-block;
+  margin: 22px 0 0 192px;
+  i{
+    display: block;
+  }
+}
+
+.car-content{
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 37px;
+  i{
+    display: block;
+  }
+}
+.car{
+  background: url(@car) no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 30px;
+}
+.cigarette{
+  background-color: #fff;
+  width: 20px;
+  height: 10px;
+  border-radius: 12px;
+  background-color: #fff;
+  &:first-child{
+    position: relative;
+    top: 10px;
+  }
+  &.last{
+    top: -10px;
+    position: relative;
+  }
+}
+.game-progress{
+  width: 202px;
+  margin: 14px auto 0;
+  text-align: left;
+}
+.win-tip{
+  font-size: 8px;
+  color: #90624a;
+  margin-top: -6px;
+  position: relative;
+  top: -11px;
+}
+.rc-progress{
+  display: inline-block;
+  width: 192px;
+  height: 30px;
+  margin: -5px auto 0;
+  position: relative;
+}
+.progress-bar{
+  background-color: #8fc7fd;
+  height: 8px;
+  margin: 11px auto 0;
+  border-radius: 25px;
+  box-shadow: 0px 0px 0px 2px #ddfdd6 inset;
+}
+.progress-stage{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  li{
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-image: url(@stageIcon);
+    width: 14px;
+    height: 14px;
+    &:nth-child(1){
+      left: 25%;
+    }
+    &:nth-child(2){
+      left: 55%;
+    }
+    &:nth-child(3){
+      background-image: url(@lastStageIcon);
+      width: 42px;
+      height: 42px;
+      left: 84%;
+    }
+    &.finish-stage{
+      background-image: url(@finishStage);
+      width: 21px;
+      height: 21px;
+    }
+  }
+}
+
+.progress-len{
+  background: linear-gradient(#fdf273 8%, #ffa811);
+  height: 4px;
+  border-radius: 20px 0 0 20px;
+  margin: -6px 0 0 2px;
+  width: 0;
+}
+.animate-progress-len{
+  transition: width .5s cubic-bezier(0.58, 1.49, 0.49, 1.48);
+}
+.progress-prize{
+  background-image: url(@prizeIcon); //TODO 
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  width: 100%;
+  height: 16px;
+  display: inline-block;
+  margin-top: 9px;
+}
+.prize-name{
+  font-size: 8px;
+  color: #90624a;
+  width: 42px;
+  height: 15px;
+  line-height: 13px;
+  border-radius: 10px;
+  border: 1px solid #f6b901;
+  background-color: #f9e43f;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: -1px;
+  font-weight: 700;
+}
+
+.ripple-animate{
+  &:before,&:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fcf6dc;
+    border-radius: 50%;
+    transform: scale(0) translateZ(0);
+    opacity: 0;
+    animation: rippleAni 1s 4 ease-out;
+  }
+  &:after{
+    animation-delay: 0.4s;
+  }
+}
+@keyframes rippleAni {
+  0%{
+    transform: scale(0.99);
+    opacity: 1;
+  }
+  to { transform: scale(2) translateZ(0); opacity: 0;}
+}
+
+.character-content{
+  padding-left: 88px;
+  margin-top: -7px;
+  position: relative;
+  // top: -5px;
+}
+.food-content{
+  background: url(@foodIcon) no-repeat;
+  background-size: contain;
+  width: 66px;
+  height: 66px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  .food-count{
+    background-color: #f33d3d;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
+    position: absolute;
+    right: 2px;
+    top: 9px;
+    padding: 3px 0 0 1px;
+    box-sizing: border-box;
+  }
+  .feed-word{
+    background: url(@weizuziIcon) no-repeat center;
+    background-size: contain;
+    width: 50px;
+    height: 14px;
+    position: absolute;
+    bottom: 4px;
+    left: 9px;
+  }
+  .feedover-tip{
+    position: absolute;
+    bottom: -12px;
+    width: 118px;
+    left: -26px;
+    color: #90542e;
+    font-size: 7px;
+    display: none;
+    font-weight: 700;
+  }
+  &.today-disabled{
+    .feed-word{
+      background-image: url(@comeTomorrowIcon);
+    }
+    .feedover-tip{
+      display: block;
+    }
+  }
+  &.lottery-award{
+    .feed-word{
+      background-image: url(@lotteryAwardIcon);
+    }
+  }
+}
+.panda{
+  background: url(@panda) no-repeat;
+  background-size: contain;
+  width: 75px;
+  height: 121px;
+  z-index: 2;
+  position: relative;
+  top: -10px;
+}
+.panda-main{
+  width: 75px;
+  height: 121px;
+  margin: 0 9px;
+  display: inline-block;
+  position: relative;
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+    margin-left: -21px;
+    border-radius: 50%;
+    transform: scaleY(0.5);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: rgba(152,83,57,0.2);
+  }
+}
+.animate-effects{
+  transform: scale(0.333);
+  position: absolute;
+  transform-origin: left top;
+  margin-left: -1px;
+}
+.applist-container{
+  background: url(@appStorebg) no-repeat center;
+  background-size: contain;
+  width: 348px;
+  height: 260px;
+  margin: 22px auto 12px;
+  &:before{
+    content: '';
+    display: block;
+    height: 1px;
+  }
+}
+
+.install-all{
+  width: 127px;
+  height: 23px;
+  line-height: 24px;
+  margin: 24px auto 0;
+  border-radius: 20px;
+  background-color: #febf27;
+  box-shadow: 0 0 0px 2px #f7cfb4;
+  color: #6b081d;
+  font-size: 12px;
+  font-weight: 700;
+}
+.applist-tip{
+  color: #faefea;
+  font-size: 9px;
+  margin-top: 8px;
+}
+.applist{
+  margin: 6px 28px 4px;
+  &>li{
+    float: left;
+    text-align: center;
+    width: 25%;
+    height: 75px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    &:nth-child(4n){
+      margin-right: 0;
+    }
+    p{
+      margin-top: 6px;
+      font-size: 10px;
+      height: 11px;
+      line-height: 11px;
+    }
+    button{
+      margin-top: 5px;
+      padding: 0 5px;
+      background-color: #febf27;
+      border-radius: 15px;
+      box-sizing: border-box;
+      width: 45px;
+      height: 16px;
+      line-height: 20px;
+      // padding: 4px 0;
+      color: #7a2414;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 10px;
+      font-weight: 700;
+    }
+    [data-installstatus=installCompleteStatus]{
+      background: #ff9000;
+    }
+    // [data-installstatus=downloadingStatus]{
+    //   font-size: 11px;
+    // }
+    .lotteryed{
+      background-color: #febf27;
+      opacity: 0.5;
+    }
+  }
+  .app-logo{
+    width: 37px;
+    height: 37px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+}
+
+.tip-menus{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  dd{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 34px;
+    margin-top: 14px;
+    opacity: 0;
+    transition: opacity .3s linear,transform .3s ease-out;
+  }
+  .activity-desc{
+    background-image: url(@menuExplainIcon);
+    transform: translateY(-44px);
+    transition-delay: 0.1s;
+  }
+  .award-mine{
+    background-image: url(@menuAwardsIcon);
+    transform: translateY(-92px);
+  }
+  &.activied{
+    dd{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+.tip-menu-btn{
+  background: url(@menusIcon) no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 1;
+}
+.guide-mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 100;
+}
+.show-guide-tip{
+  .guide-mask{
+    display: block;
+  }
+  .signin-area{
+    z-index: 200;
+  }
+  .game-tip, .install-all,.applist-tip,.applist li{
+    position: relative;
+    z-index: 200;
+  }
+}
+.guide-mask{
+  display: none;
+  padding-top: 92px;
+  .up-arrow,&:after{
+    display: block;
+    background: url(@arrowTipIcon) no-repeat;
+    background-size: contain;
+    width: 100%;
+  }
+  .up-arrow{
+    margin-bottom: 10px;
+    background-position: 57.3% top;
+    height: 90px;
+  }
+  &:after{
+    content: '';
+    background-image: url(@downArrowTipIcon);
+    background-position: 51.5% center;
+    height: 86px;
+  }
+}
+.guide-tip{
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+.guide-okbtn{
+  width: 123px;
+  height: 26px;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  background: none;
+  border-radius: 20px;
+  color: #fff;
+  display: block;
+  margin: 15px auto 8px;
+  font-size: 10px;
+}
+.text-overflow{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+.loading-mask{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.progress-bounce {
+  animation-name: pgsbounce;
+  animation-duration: 1s;
+  transform-origin: left;
+}
+
+@keyframes pgsbounce {
+  from, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: scaleX(1);
+  }
+
+  20%{
+    transform: scaleX(1.3);
+  }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: scaleX(0.7);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: scaleX(0.85);
+  }
+
+  90% {
+    transform: scaleX(0.9);
+  }
+}
+
+.wind-rotate{
+  animation: windRotate 2s infinite linear;
+}
+@keyframes windRotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.flow-cigarette{
+  animation: flowCigarette 2.5s infinite ease-in;
+  transform-origin: left;
+  transform: translate3d(5px,14px,0) scale(0);
+}
+.flow-delay{
+  animation-delay: 1s;
+}
+.flow-delay2{
+  animation-delay: 1.7s;
+}
+@keyframes flowCigarette {
+  20%{
+    transform: translate3d(5px,14px,0) scale(0);
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    transform: translate3d(25px,-10px,0) scale(1.2);
+    opacity: 0;
+  }
+}
+.lazyload{
+  background-image: url(../images/grey.png);
+}

@@ -1,0 +1,116 @@
+{"frames": {
+
+"body.png":
+{
+	"frame": {"x":1,"y":1,"w":140,"h":215},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":140,"h":215},
+	"sourceSize": {"w":140,"h":215}
+},
+"cloth.png":
+{
+	"frame": {"x":233,"y":1,"w":118,"h":143},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":118,"h":143},
+	"sourceSize": {"w":118,"h":143}
+},
+"face1.png":
+{
+	"frame": {"x":576,"y":139,"w":28,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+	"sourceSize": {"w":28,"h":28}
+},
+"hair1.png":
+{
+	"frame": {"x":536,"y":72,"w":68,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":66},
+	"sourceSize": {"w":68,"h":66}
+},
+"head.png":
+{
+	"frame": {"x":381,"y":145,"w":77,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":77,"h":84},
+	"sourceSize": {"w":77,"h":84}
+},
+"left_arm.png":
+{
+	"frame": {"x":459,"y":140,"w":116,"h":67},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":67},
+	"sourceSize": {"w":116,"h":67}
+},
+"left_foot.png":
+{
+	"frame": {"x":605,"y":72,"w":95,"h":132},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":95,"h":132},
+	"sourceSize": {"w":95,"h":132}
+},
+"left_hand.png":
+{
+	"frame": {"x":536,"y":1,"w":144,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":70},
+	"sourceSize": {"w":144,"h":70}
+},
+"left_leg.png":
+{
+	"frame": {"x":352,"y":1,"w":97,"h":143},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":143},
+	"sourceSize": {"w":97,"h":143}
+},
+"right_arm.png":
+{
+	"frame": {"x":142,"y":148,"w":107,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":107,"h":84},
+	"sourceSize": {"w":107,"h":84}
+},
+"right_foot.png":
+{
+	"frame": {"x":450,"y":1,"w":85,"h":138},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":85,"h":138},
+	"sourceSize": {"w":85,"h":138}
+},
+"right_hand.png":
+{
+	"frame": {"x":250,"y":145,"w":130,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":130,"h":90},
+	"sourceSize": {"w":130,"h":90}
+},
+"right_leg.png":
+{
+	"frame": {"x":142,"y":1,"w":90,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":146},
+	"sourceSize": {"w":90,"h":146}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "mansprites2.png",
+	"format": "RGBA8888",
+	"size": {"w":702,"h":236},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:41524e057672be78d9ae8f178320e0fa:1/1$"
+}
+}

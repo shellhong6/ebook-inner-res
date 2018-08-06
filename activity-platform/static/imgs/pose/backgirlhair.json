@@ -1,0 +1,60 @@
+{"frames": {
+
+"hair1.png":
+{
+	"frame": {"x":308,"y":1,"w":271,"h":411},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":271,"h":411},
+	"sourceSize": {"w":271,"h":411}
+},
+"hair2.png":
+{
+	"frame": {"x":1,"y":1,"w":306,"h":434},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":306,"h":434},
+	"sourceSize": {"w":306,"h":434}
+},
+"hair3.png":
+{
+	"frame": {"x":580,"y":1,"w":338,"h":379},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":338,"h":379},
+	"sourceSize": {"w":338,"h":379}
+},
+"hair4.png":
+{
+	"frame": {"x":1440,"y":1,"w":160,"h":223},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":160,"h":223},
+	"sourceSize": {"w":160,"h":223}
+},
+"hair5.png":
+{
+	"frame": {"x":919,"y":1,"w":285,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":285,"h":343},
+	"sourceSize": {"w":285,"h":343}
+},
+"hair6.png":
+{
+	"frame": {"x":1205,"y":1,"w":234,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":234,"h":320},
+	"sourceSize": {"w":234,"h":320}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "backgirlhair.png",
+	"format": "RGBA8888",
+	"size": {"w":1601,"h":436},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ebe1f09029dafc9a526144e296cb1bc7:1/1$"
+}
+}

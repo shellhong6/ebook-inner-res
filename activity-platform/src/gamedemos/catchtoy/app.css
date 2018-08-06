@@ -1,0 +1,172 @@
+html {
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background: #eb0c69;
+}
+body{
+    /* position: relative; */
+    background: #eb0c69;
+    font-family: 'Microsoft Yahei';
+    overflow-x: hidden;
+}
+#bodybg{
+    display: block;
+    position: relative;;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+}
+#canvas_game,#bodyFt{
+    position: relative;;
+    top: 0;
+    left: 0;
+    height: auto;
+    overflow: hidden;
+}
+#canvas_game{
+    position: relative;
+    margin-top: -1px;
+}
+#canvas_game:after{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+#button{
+    display: block;
+    width: 142px;
+    height: 31px;
+    position: absolute;
+    z-index: 10;
+    top: 67.76%;
+    left: 39.63%;
+}
+#actionBar{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0b163a;
+    width: 100%;
+    height: 75px;
+    color: #fff;
+    z-index: 999
+}
+#goback_bar{
+    font-size: 18px;
+    position: absolute;
+    bottom: 18%;
+}
+#bodyFt nav{
+    position: relative;;
+    top: 1%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    z-index: 9;
+}
+#bodyFt nav a{
+    display: inline-block;
+    color: #fed7dd;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+#app{
+    clear: both;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: .4rem auto;
+}
+#app img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+#app>div{
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: .5rem;
+}
+#app p{
+    margin: .35rem auto 0;
+    color: #fff;
+}
+#app .appSize{
+    font-size: 12px;
+    margin-left: 0;
+}
+#welfare_cont{
+    margin: 1rem auto;
+}
+#welfare_cont>div{
+    width: 94.8%;
+    margin: 0 auto;
+}
+#welfare_cont img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.welfareB{
+    background: url('../images/welfareB.webp') 0 0 repeat-y;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.welfareB .ad_img{
+    width: 45.5%;
+    margin-left: 3%;
+    margin: .45rem auto .15rem;
+}
+.welfareB .ad_img p{
+    margin: 0 auto;
+    background: #fff;
+    font-size: 12px;
+    padding: 0 4px;
+    color: #3d3d3d;
+}
+.welfareB .ad_img:nth-child(2n){
+    margin-left: 0;
+    margin-right: 3%;
+}
+
+/* dialog bugfix */
+.modal-dialog .modal-dialog-main header{
+    padding-top: .6rem;
+}
+.modal-dialog.dlg-no-title .dialog-content{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.modal-dialog .dialog-content img{
+    max-width: 3rem;
+}
+.modal-dialog.prize-dlg .dialog-content img{
+    max-width: 6rem;
+}
+.myaward-dialog .dlg-award-list ul{
+    padding-left: 0;
+}
+.personinfo-dialog textarea.valid-input{
+    max-height: 2.0625rem !important;
+}
+.dialog-instruction section{
+    max-height: 18.75rem;
+    text-align: left !important;
+}

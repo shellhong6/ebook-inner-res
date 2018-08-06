@@ -1,0 +1,68 @@
+{"frames": {
+
+"after-hair1.png":
+{
+	"frame": {"x":656,"y":2,"w":179,"h":338},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":179,"h":338},
+	"sourceSize": {"w":179,"h":338}
+},
+"hair1.png":
+{
+	"frame": {"x":1209,"y":2,"w":179,"h":192},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":179,"h":192},
+	"sourceSize": {"w":179,"h":192}
+},
+"hair3.png":
+{
+	"frame": {"x":1023,"y":2,"w":184,"h":195},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":184,"h":195},
+	"sourceSize": {"w":184,"h":195}
+},
+"hair4.png":
+{
+	"frame": {"x":837,"y":2,"w":184,"h":294},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":184,"h":294},
+	"sourceSize": {"w":184,"h":294}
+},
+"hair5.png":
+{
+	"frame": {"x":2,"y":2,"w":250,"h":384},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":250,"h":384},
+	"sourceSize": {"w":250,"h":384}
+},
+"hair6.png":
+{
+	"frame": {"x":439,"y":2,"w":215,"h":351},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":215,"h":351},
+	"sourceSize": {"w":215,"h":351}
+},
+"hair7.png":
+{
+	"frame": {"x":254,"y":2,"w":183,"h":374},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":374},
+	"sourceSize": {"w":183,"h":374}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "leftgirlhair.png",
+	"format": "RGBA8888",
+	"size": {"w":1390,"h":388},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:74ae7ebdb9588e5a1d8f3448d3f1f426:1/1$"
+}
+}

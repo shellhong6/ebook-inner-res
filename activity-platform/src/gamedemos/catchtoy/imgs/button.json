@@ -1,0 +1,108 @@
+{"frames": {
+
+"add3times.png":
+{
+	"frame": {"x":431,"y":2,"w":336,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":336,"h":52},
+	"sourceSize": {"w":336,"h":52}
+},
+"button.png":
+{
+	"frame": {"x":2,"y":2,"w":427,"h":94},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":94},
+	"sourceSize": {"w":427,"h":94}
+},
+"button_down.png":
+{
+	"frame": {"x":2,"y":98,"w":427,"h":87},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":87},
+	"sourceSize": {"w":427,"h":87}
+},
+"drawing.png":
+{
+	"frame": {"x":431,"y":56,"w":319,"h":63},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":319,"h":63},
+	"sourceSize": {"w":319,"h":69}
+},
+"go.png":
+{
+	"frame": {"x":2,"y":187,"w":138,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":138,"h":59},
+	"sourceSize": {"w":138,"h":59}
+},
+"lowPrize.png":
+{
+	"frame": {"x":769,"y":2,"w":242,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":242,"h":60},
+	"sourceSize": {"w":242,"h":60}
+},
+"preLottery.png":
+{
+	"frame": {"x":431,"y":121,"w":297,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":297,"h":64},
+	"sourceSize": {"w":299,"h":64}
+},
+"prizesLoaded.png":
+{
+	"frame": {"x":424,"y":187,"w":241,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":241,"h":57},
+	"sourceSize": {"w":241,"h":57}
+},
+"prizesLoading.png":
+{
+	"frame": {"x":667,"y":188,"w":175,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":175,"h":55},
+	"sourceSize": {"w":175,"h":55}
+},
+"startLoadPrizes.png":
+{
+	"frame": {"x":142,"y":187,"w":280,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":280,"h":52},
+	"sourceSize": {"w":280,"h":52}
+},
+"startLottery.png":
+{
+	"frame": {"x":752,"y":64,"w":232,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":232,"h":57},
+	"sourceSize": {"w":232,"h":57}
+},
+"tomorrowAgain.png":
+{
+	"frame": {"x":730,"y":123,"w":296,"h":63},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":296,"h":63},
+	"sourceSize": {"w":296,"h":63}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "button.png",
+	"format": "RGBA8888",
+	"size": {"w":1044,"h":248},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7a707de744930d4e5f4dc494427e223c:1/1$"
+}
+}

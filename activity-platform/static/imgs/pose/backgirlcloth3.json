@@ -1,0 +1,100 @@
+{"frames": {
+
+"cloth.png":
+{
+	"frame": {"x":1,"y":1,"w":195,"h":334},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":195,"h":334},
+	"sourceSize": {"w":195,"h":334}
+},
+"left_arm.png":
+{
+	"frame": {"x":89,"y":336,"w":87,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":87,"h":156},
+	"sourceSize": {"w":87,"h":156}
+},
+"left_foot.png":
+{
+	"frame": {"x":360,"y":244,"w":89,"h":242},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":89,"h":242},
+	"sourceSize": {"w":91,"h":316}
+},
+"left_hand.png":
+{
+	"frame": {"x":177,"y":336,"w":75,"h":103},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":75,"h":103},
+	"sourceSize": {"w":89,"h":153}
+},
+"left_leg.png":
+{
+	"frame": {"x":197,"y":1,"w":81,"h":255},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":81,"h":255},
+	"sourceSize": {"w":81,"h":255}
+},
+"left_shoe.png":
+{
+	"frame": {"x":197,"y":257,"w":91,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":54},
+	"sourceSize": {"w":91,"h":54}
+},
+"right_arm.png":
+{
+	"frame": {"x":1,"y":336,"w":87,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":87,"h":156},
+	"sourceSize": {"w":87,"h":156}
+},
+"right_foot.png":
+{
+	"frame": {"x":360,"y":1,"w":91,"h":242},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":242},
+	"sourceSize": {"w":91,"h":316}
+},
+"right_hand.png":
+{
+	"frame": {"x":269,"y":312,"w":75,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":75,"h":102},
+	"sourceSize": {"w":121,"h":160}
+},
+"right_leg.png":
+{
+	"frame": {"x":279,"y":1,"w":80,"h":255},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":255},
+	"sourceSize": {"w":80,"h":255}
+},
+"right_shoe.png":
+{
+	"frame": {"x":177,"y":440,"w":91,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":54},
+	"sourceSize": {"w":91,"h":54}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "backgirlcloth3.png",
+	"format": "RGBA8888",
+	"size": {"w":452,"h":495},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f31108f8f44ccb0b6b874aaf900dbb66:1/1$"
+}
+}

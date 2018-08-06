@@ -1,0 +1,100 @@
+{"frames": {
+
+"black0.png":
+{
+	"frame": {"x":1368,"y":192,"w":108,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":83,"y":163,"w":108,"h":50},
+	"sourceSize": {"w":270,"h":270}
+},
+"black1.png":
+{
+	"frame": {"x":1600,"y":2,"w":150,"h":154},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":49,"y":83,"w":150,"h":154},
+	"sourceSize": {"w":270,"h":270}
+},
+"black10.png":
+{
+	"frame": {"x":1752,"y":2,"w":184,"h":146},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":4,"w":184,"h":146},
+	"sourceSize": {"w":270,"h":270}
+},
+"black2.png":
+{
+	"frame": {"x":1218,"y":2,"w":148,"h":202},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":55,"y":55,"w":148,"h":202},
+	"sourceSize": {"w":270,"h":270}
+},
+"black3.png":
+{
+	"frame": {"x":814,"y":2,"w":166,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":52,"y":49,"w":166,"h":220},
+	"sourceSize": {"w":270,"h":270}
+},
+"black4.png":
+{
+	"frame": {"x":634,"y":2,"w":178,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":47,"y":40,"w":178,"h":230},
+	"sourceSize": {"w":270,"h":270}
+},
+"black5.png":
+{
+	"frame": {"x":438,"y":2,"w":194,"h":238},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":32,"w":194,"h":238},
+	"sourceSize": {"w":270,"h":270}
+},
+"black6.png":
+{
+	"frame": {"x":2,"y":2,"w":210,"h":244},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":26,"w":210,"h":244},
+	"sourceSize": {"w":270,"h":270}
+},
+"black7.png":
+{
+	"frame": {"x":214,"y":2,"w":222,"h":238},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":19,"w":222,"h":238},
+	"sourceSize": {"w":270,"h":270}
+},
+"black8.png":
+{
+	"frame": {"x":982,"y":2,"w":234,"h":204},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":14,"w":234,"h":204},
+	"sourceSize": {"w":270,"h":270}
+},
+"black9.png":
+{
+	"frame": {"x":1368,"y":2,"w":230,"h":188},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":5,"w":230,"h":188},
+	"sourceSize": {"w":270,"h":270}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "blackEf.png",
+	"format": "RGBA8888",
+	"size": {"w":1938,"h":248},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c2d9cebf437e0d06f657e5206926564f$"
+}
+}

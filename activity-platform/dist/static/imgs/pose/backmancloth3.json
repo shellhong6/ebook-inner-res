@@ -1,0 +1,108 @@
+{"frames": {
+
+"before-hair.png":
+{
+	"frame": {"x":416,"y":1,"w":188,"h":206},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":188,"h":206},
+	"sourceSize": {"w":188,"h":206}
+},
+"cloth.png":
+{
+	"frame": {"x":1,"y":1,"w":414,"h":473},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":414,"h":473},
+	"sourceSize": {"w":414,"h":473}
+},
+"left_arm.png":
+{
+	"frame": {"x":755,"y":166,"w":91,"h":164},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":164},
+	"sourceSize": {"w":91,"h":164}
+},
+"left_foot.png":
+{
+	"frame": {"x":605,"y":1,"w":74,"h":318},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":318},
+	"sourceSize": {"w":74,"h":318}
+},
+"left_hand.png":
+{
+	"frame": {"x":669,"y":321,"w":82,"h":114},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":82,"h":114},
+	"sourceSize": {"w":92,"h":160}
+},
+"left_leg.png":
+{
+	"frame": {"x":501,"y":208,"w":84,"h":267},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":267},
+	"sourceSize": {"w":84,"h":267}
+},
+"left_shoe.png":
+{
+	"frame": {"x":684,"y":436,"w":97,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":61},
+	"sourceSize": {"w":97,"h":61}
+},
+"right_arm.png":
+{
+	"frame": {"x":755,"y":1,"w":92,"h":164},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":164},
+	"sourceSize": {"w":92,"h":164}
+},
+"right_foot.png":
+{
+	"frame": {"x":680,"y":1,"w":74,"h":319},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":74,"h":319},
+	"sourceSize": {"w":96,"h":333}
+},
+"right_hand.png":
+{
+	"frame": {"x":586,"y":320,"w":82,"h":117},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":117},
+	"sourceSize": {"w":128,"h":169}
+},
+"right_leg.png":
+{
+	"frame": {"x":416,"y":208,"w":84,"h":267},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":267},
+	"sourceSize": {"w":84,"h":267}
+},
+"right_shoe.png":
+{
+	"frame": {"x":586,"y":438,"w":97,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":61},
+	"sourceSize": {"w":97,"h":61}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "backmancloth3.png",
+	"format": "RGBA8888",
+	"size": {"w":848,"h":500},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:874f0c8c2e5c55be2d1c3d39de35c5d4:1/1$"
+}
+}

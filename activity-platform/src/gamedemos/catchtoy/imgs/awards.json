@@ -1,0 +1,68 @@
+{"frames": [
+
+{
+	"filename": "20.png",
+	"frame": {"x":103,"y":0,"w":103,"h":58},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":103,"h":58},
+	"sourceSize": {"w":103,"h":58}
+},
+{
+	"filename": "50.png",
+	"frame": {"x":206,"y":0,"w":103,"h":58},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":103,"h":58},
+	"sourceSize": {"w":103,"h":58}
+},
+{
+	"filename": "100.png",
+	"frame": {"x":309,"y":0,"w":104,"h":58},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":58},
+	"sourceSize": {"w":104,"h":58}
+},
+{
+	"filename": "ML6.png",
+	"frame": {"x":130,"y":103,"w":148,"h":181},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":148,"h":181},
+	"sourceSize": {"w":148,"h":181}
+},
+{
+	"filename": "MLNote-6.png",
+	"frame": {"x":0,"y":103,"w":130,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":130,"h":158},
+	"sourceSize": {"w":130,"h":158}
+},
+{
+	"filename": "MZPRO-7.png",
+	"frame": {"x":278,"y":103,"w":155,"h":189},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":189},
+	"sourceSize": {"w":155,"h":189}
+},
+{
+	"filename": "thanks.png",
+	"frame": {"x":0,"y":0,"w":103,"h":103},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":103,"h":103},
+	"sourceSize": {"w":103,"h":103}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "awards.png",
+	"format": "RGBA8888",
+	"size": {"w":433,"h":292},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d3ed5ffe20029a1e9832450e50091a12:394531072e39fd23b8d1d85debdc60be:a78d7a1cad5089e77c01b829423abcae$"
+}
+}

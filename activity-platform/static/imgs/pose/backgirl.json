@@ -1,0 +1,140 @@
+{"frames": {
+
+"body.png":
+{
+	"frame": {"x":263,"y":1,"w":183,"h":387},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":387},
+	"sourceSize": {"w":185,"h":387}
+},
+"cloth.png":
+{
+	"frame": {"x":447,"y":1,"w":181,"h":323},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":64,"w":181,"h":323},
+	"sourceSize": {"w":185,"h":387}
+},
+"hair0.png":
+{
+	"frame": {"x":1,"y":1,"w":261,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":261,"h":216},
+	"sourceSize": {"w":261,"h":216}
+},
+"head.png":
+{
+	"frame": {"x":1,"y":218,"w":138,"h":166},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":138,"h":166},
+	"sourceSize": {"w":138,"h":166}
+},
+"left_arm.png":
+{
+	"frame": {"x":535,"y":325,"w":85,"h":156},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":85,"h":156},
+	"sourceSize": {"w":87,"h":156}
+},
+"left_foot.png":
+{
+	"frame": {"x":721,"y":1,"w":91,"h":316},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":316},
+	"sourceSize": {"w":91,"h":316}
+},
+"left_hand.png":
+{
+	"frame": {"x":751,"y":318,"w":89,"h":153},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":153},
+	"sourceSize": {"w":89,"h":153}
+},
+"left_leg.png":
+{
+	"frame": {"x":813,"y":1,"w":81,"h":255},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":81,"h":255},
+	"sourceSize": {"w":81,"h":255}
+},
+"left_shoe.png":
+{
+	"frame": {"x":222,"y":389,"w":91,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":59},
+	"sourceSize": {"w":91,"h":59}
+},
+"pants-left.png":
+{
+	"frame": {"x":314,"y":389,"w":81,"h":87},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":81,"h":87},
+	"sourceSize": {"w":81,"h":255}
+},
+"pants-right.png":
+{
+	"frame": {"x":1,"y":385,"w":81,"h":87},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":81,"h":87},
+	"sourceSize": {"w":81,"h":255}
+},
+"right_arm.png":
+{
+	"frame": {"x":447,"y":325,"w":87,"h":154},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":87,"h":154},
+	"sourceSize": {"w":87,"h":156}
+},
+"right_foot.png":
+{
+	"frame": {"x":629,"y":1,"w":91,"h":316},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":316},
+	"sourceSize": {"w":91,"h":316}
+},
+"right_hand.png":
+{
+	"frame": {"x":629,"y":318,"w":121,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":121,"h":160},
+	"sourceSize": {"w":121,"h":160}
+},
+"right_leg.png":
+{
+	"frame": {"x":140,"y":218,"w":81,"h":255},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":81,"h":255},
+	"sourceSize": {"w":81,"h":255}
+},
+"right_shoe.png":
+{
+	"frame": {"x":222,"y":449,"w":91,"h":58},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":58},
+	"sourceSize": {"w":91,"h":58}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "backgirl.png",
+	"format": "RGBA8888",
+	"size": {"w":895,"h":508},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e0477e7fb832fe598606fff285713556:1/1$"
+}
+}

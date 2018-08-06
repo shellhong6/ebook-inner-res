@@ -1,0 +1,92 @@
+{"frames": {
+
+"cloak.png":
+{
+	"frame": {"x":2,"y":2,"w":416,"h":464},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":416,"h":464},
+	"sourceSize": {"w":416,"h":464}
+},
+"cloth.png":
+{
+	"frame": {"x":420,"y":2,"w":278,"h":366},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":278,"h":366},
+	"sourceSize": {"w":278,"h":366}
+},
+"left_arm.png":
+{
+	"frame": {"x":788,"y":255,"w":86,"h":157},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":157},
+	"sourceSize": {"w":86,"h":157}
+},
+"left_hand.png":
+{
+	"frame": {"x":498,"y":370,"w":75,"h":105},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":0,"w":75,"h":105},
+	"sourceSize": {"w":87,"h":149}
+},
+"left_leg.png":
+{
+	"frame": {"x":886,"y":251,"w":81,"h":247},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":81,"h":247},
+	"sourceSize": {"w":81,"h":247}
+},
+"left_shoe.png":
+{
+	"frame": {"x":793,"y":2,"w":91,"h":251},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":251},
+	"sourceSize": {"w":91,"h":251}
+},
+"right_arm.png":
+{
+	"frame": {"x":700,"y":255,"w":86,"h":157},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":157},
+	"sourceSize": {"w":86,"h":157}
+},
+"right_hand.png":
+{
+	"frame": {"x":420,"y":370,"w":76,"h":106},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":76,"h":106},
+	"sourceSize": {"w":120,"h":156}
+},
+"right_leg.png":
+{
+	"frame": {"x":886,"y":2,"w":81,"h":247},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":81,"h":247},
+	"sourceSize": {"w":81,"h":247}
+},
+"right_shoe.png":
+{
+	"frame": {"x":700,"y":2,"w":91,"h":251},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":251},
+	"sourceSize": {"w":91,"h":251}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "girlcloth2.png",
+	"format": "RGBA8888",
+	"size": {"w":969,"h":500},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c96e136710a8acf6c57e0089bf709713:1/1$"
+}
+}

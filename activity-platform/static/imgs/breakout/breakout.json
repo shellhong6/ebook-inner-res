@@ -1,0 +1,68 @@
+{"frames": {
+
+"arrowtip.png":
+{
+	"frame": {"x":311,"y":2,"w":423,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":423,"h":42},
+	"sourceSize": {"w":423,"h":42}
+},
+"ball.png":
+{
+	"frame": {"x":500,"y":46,"w":44,"h":44},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":44,"h":44},
+	"sourceSize": {"w":44,"h":44}
+},
+"brick_1.png":
+{
+	"frame": {"x":588,"y":46,"w":40,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":28},
+	"sourceSize": {"w":40,"h":28}
+},
+"brick_2.png":
+{
+	"frame": {"x":546,"y":76,"w":40,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":28},
+	"sourceSize": {"w":40,"h":28}
+},
+"brick_3.png":
+{
+	"frame": {"x":546,"y":46,"w":40,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":28},
+	"sourceSize": {"w":40,"h":28}
+},
+"paddle.png":
+{
+	"frame": {"x":311,"y":46,"w":187,"h":58},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":187,"h":58},
+	"sourceSize": {"w":187,"h":58}
+},
+"start.png":
+{
+	"frame": {"x":2,"y":2,"w":307,"h":116},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":307,"h":116},
+	"sourceSize": {"w":307,"h":116}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "breakout.png",
+	"format": "RGBA8888",
+	"size": {"w":736,"h":120},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f01221a9c7c9dde141c25b867f51df34$"
+}
+}

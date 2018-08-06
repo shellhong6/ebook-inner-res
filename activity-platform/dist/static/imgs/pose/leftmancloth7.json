@@ -1,0 +1,44 @@
+{"frames": {
+
+"after_foot.png":
+{
+	"frame": {"x":2,"y":523,"w":112,"h":49},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":296,"w":112,"h":49},
+	"sourceSize": {"w":126,"h":345}
+},
+"before_foot.png":
+{
+	"frame": {"x":2,"y":574,"w":110,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":256,"w":110,"h":76},
+	"sourceSize": {"w":208,"h":332}
+},
+"before_leg.png":
+{
+	"frame": {"x":2,"y":377,"w":134,"h":144},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":134,"h":144},
+	"sourceSize": {"w":134,"h":144}
+},
+"cloth.png":
+{
+	"frame": {"x":2,"y":2,"w":139,"h":373},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":54,"w":139,"h":373},
+	"sourceSize": {"w":139,"h":427}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "leftmancloth7.png",
+	"format": "RGBA8888",
+	"size": {"w":143,"h":652},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:cae78e26ce832b19aedc57ab2a33f5c5:1/1$"
+}
+}

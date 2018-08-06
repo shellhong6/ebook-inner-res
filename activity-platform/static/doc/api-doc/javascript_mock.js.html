@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: javascript/mock.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: javascript/mock.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import Native from './native.js';
+import domUtils from './dom.js';
+import businessFit from '@flyme/business-fit/build/index';
+import services from './services.js';
+/** @module Mock */
+
+/**
+ * 对下载安装等的mock,方便调试
+ * @namespace
+ */
+let Mock = {
+  /**
+   *
+   * @param {int} time 多少秒下完应用
+   */
+  autoDownload(time = 10, failTime, installTime, isFail){
+    let perTime = (time * 1000) / 100,
+        pkg = domUtils.getUrlParam('pkg'),
+        btnStatus = 0,
+        passTime = 0;
+
+    failTime = failTime * 1000;
+    installTime = installTime * 1000;
+
+    if(this.downloading)
+      return;
+
+    this.downloading = true;
+    window.notifyAppStatus(pkg, null, true, 'STATE_PREPARING', 1);
+
+    let _innerDownload = ()=>{
+      setTimeout(()=>{
+        passTime += perTime;
+        window.notifyAppStatus(pkg, (btnStatus++) +'%', false, 'STATE_DOWNLOADING', 1);
+
+        if(failTime &lt;= passTime &amp;&amp; isFail){
+          return notifyStatus('STATE_DOWNLOAD_ERROR');
+        }
+        if(btnStatus &lt; 100){
+          _innerDownload();
+        }else{
+          this.stw(()=>{
+            notifyStatus('STATE_DOWNLOAD_COMPLETE');
+          }).then(()=>{
+             return this.stw(()=>{
+               notifyStatus('STATE_INSTALLING');
+             },1000);
+          }).then(()=>{
+             return this.stw(()=>{
+               Native.isAppInstalled = () => 1;
+               this.businessFit.isAppInstalled = () => 1;
+               notifyStatus('STATE_INSTALL_COMPLETE');
+               this.downloading = false;
+             }, installTime)
+          })
+        }
+      }, perTime);
+    }
+
+    _innerDownload();
+
+    function notifyStatus(status){
+      window.notifyAppStatus(pkg, null, false, status, 1);
+    }
+  },
+  stw(callback, time){
+    return new Promise(function(resolve){
+      setTimeout(()=>{
+        resolve(callback());
+      }, time || 1000);
+    });
+  },
+  start(busfit){
+    let debugDom = $('.debug');
+    let downloadTime = domUtils.getUrlParam('downloadtime') * 1 || 30;
+    let installTime = domUtils.getUrlParam('installTime') * 1 || 2;
+
+    this.businessFit = busfit || businessFit;
+    if(!debugDom.length){
+      debugDom = $('&lt;div class="debug">&lt;/div>');
+      $('body').append(debugDom);
+    }
+
+    debugDom.append('&lt;button id="debug-download">模拟下载&lt;/button>');
+    debugDom.append('&lt;button id="debug-download-fail">模拟下载失败&lt;/button>');
+    debugDom.append('&lt;button id="debug-close">关闭调试&lt;/button>');
+
+    debugDom.find('#debug-download').click(()=>{
+      this.autoDownload(downloadTime,null, installTime);
+    });
+
+    debugDom.find('#debug-download-fail').click(()=>{
+
+      this.autoDownload(downloadTime, downloadTime / 2, installTime, true);
+    });
+
+    debugDom.find('#debug-close').click(()=>{
+
+      $('.debug').remove();
+    });
+
+    let wifiType = domUtils.getUrlParam('wifi');
+
+    if(!window.EventJavascriptInterface){
+      if(wifiType !== null)
+        this.businessFit.getNetworkType = ()=> wifiType*1;
+
+      this.businessFit.isAppInstalled = () => domUtils.getUrlParam('isInstall')*1 || 0;
+
+      services.isLogin = ()=> true;
+    }
+  }
+};
+
+module.exports = Mock;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-ajax.html">ajax</a></li><li><a href="module-AppsGenerator.html">AppsGenerator</a></li><li><a href="module-AwardDialog.html">AwardDialog</a></li><li><a href="module-Dom.html">Dom</a></li><li><a href="module-httpService.html">httpService</a></li><li><a href="module-Lottery.html">Lottery</a></li><li><a href="module-Mock.html">Mock</a></li><li><a href="module-module_app_index.html">module/app/index</a></li><li><a href="module-Native.html">Native</a></li><li><a href="module-oauthService.html">oauthService</a></li><li><a href="module-showVerifyCodeDlg.html">showVerifyCodeDlg</a></li><li><a href="module-stateMachine.html">stateMachine</a></li><li><a href="module-tools.html">tools</a></li><li><a href="module-Track.html">Track</a></li><li><a href="module-utils.html">utils</a></li></ul><h3>Classes</h3><ul><li><a href="AppsInstallInit.html">AppsInstallInit</a></li><li><a href="ExtraWelfareList.html">ExtraWelfareList</a></li><li><a href="module-AppsGenerator-AppsGenerator.html">AppsGenerator</a></li></ul><h3>Namespaces</h3><ul><li><a href="module-AwardDialog-AwardDialog.html">AwardDialog</a></li><li><a href="module-Mock-Mock.html">Mock</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Jul 12 2018 17:29:08 GMT+0800 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

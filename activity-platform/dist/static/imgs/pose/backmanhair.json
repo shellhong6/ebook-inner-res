@@ -1,0 +1,60 @@
+{"frames": {
+
+"hair1.png":
+{
+	"frame": {"x":310,"y":2,"w":167,"h":234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":167,"h":234},
+	"sourceSize": {"w":167,"h":234}
+},
+"hair2.png":
+{
+	"frame": {"x":2,"y":775,"w":188,"h":206},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":188,"h":206},
+	"sourceSize": {"w":188,"h":206}
+},
+"hair3.png":
+{
+	"frame": {"x":250,"y":774,"w":181,"h":232},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":181,"h":232},
+	"sourceSize": {"w":181,"h":232}
+},
+"hair4.png":
+{
+	"frame": {"x":250,"y":438,"w":181,"h":334},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":181,"h":334},
+	"sourceSize": {"w":181,"h":334}
+},
+"hair5.png":
+{
+	"frame": {"x":2,"y":2,"w":306,"h":434},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":306,"h":434},
+	"sourceSize": {"w":306,"h":434}
+},
+"hair6.png":
+{
+	"frame": {"x":2,"y":438,"w":246,"h":335},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":246,"h":335},
+	"sourceSize": {"w":246,"h":335}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "backmanhair.png",
+	"format": "RGBA8888",
+	"size": {"w":479,"h":1008},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1febdb0d0fca09af2a0f97badf37d741:1/1$"
+}
+}

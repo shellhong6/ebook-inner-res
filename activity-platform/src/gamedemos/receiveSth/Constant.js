@@ -1,0 +1,35 @@
+
+module.exports = {
+  spriteImgs:{
+    carsMain: 'cars',
+    pinkEfMain: 'pinkEf',
+    blackEfMain: 'blackEf',
+    minusEfMain: 'minusEf',
+    car: 'buycar.png',
+    frontwheel: 'frontwheel.png',
+    backwheel: 'backwheel.png',
+    wheelShade: 'wheelshade.png',
+    plusScopeMg: 'mg1_1.png',
+    boomMg: 'mg2_1.png',
+    minusScopeMg: 'mg3_1.png',
+    gameBg: 'gameBg.png',
+    downCount1:'count1.png',
+    downCount2:'count2.png',
+    downCount3:'count3.png',
+    end: 'end.png',
+    begin: 'begin.png',
+    mushJump: 'mushJump',
+    blackword: 'blackword.png',
+    pinkword: 'pinkword.png',
+    yellowkword: 'yellowkword.png',
+    carWord: 'carword.png',
+    beginwd: 'beginwd.png',
+    lotterywd: 'lotteryword.png',
+    gameendwd: 'gameendword.png',
+    gameendcartxt: 'gameendcartxt.png',
+    lotterycartxt: 'lotterycartxt.png'
+  },
+  worldWidth: 1080,
+  worldHeight: 1024,
+  endTime: 20000
+}

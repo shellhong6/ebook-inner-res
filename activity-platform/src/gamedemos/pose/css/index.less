@@ -1,0 +1,505 @@
+@import '../../common/css/base.css';
+@people: '../images/people.png';
+@faceTo: '../images/faceto.png';
+@cloths: '../images/cloth.png';
+@hair: '../images/hair.png';
+@scene: '../images/scene.png';
+@props: '../images/props.png';
+
+@girlCloth: '../images/girlcloth.png';
+@manCloth: '../images/mancloth.png';
+@manFaceTo: '../images/manview.png';
+@girlFaceTo: '../images/girlview.png';
+@persons: '../images/persons.png';
+@manHairs: '../images/manhairs.png';
+@girlHairs: '../images/girlhairs.png';
+@showScene: '../images/selscene.png';
+@showProps: '../images/selprops.png';
+
+@arrow: '../images/arrow.png';
+
+@firstTopBg: '../images/first-top.png';
+@firstContentBg: '../images/first-bg.png';
+@beginBtnBg: '../images/beginBtn.png';
+@guideTitleBg: '../images/guidetitle.png';
+@guideAction: '../images/guide.gif';
+
+@appsShareBg: '../images/shareApps.png';
+@qrCodeBg: '../images/qrcode.png';
+@mzStoreBg: '../images/mz-store.png';
+
+@arrowGuide: '../images/arrow-guide.png';
+
+@bottomIcons: '../images/bottomicons.png';
+
+
+
+img{
+  vertical-align: bottom;
+}
+i{
+  display: inline-block;
+  font-style: normal;
+}
+
+.center-dlg{
+  .modal-dialog-main{
+    section{
+      text-align: center;
+    }
+  }
+}
+
+.first-page{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+}
+.first-top{
+  height: 156px;
+  background: url(@firstTopBg) no-repeat center bottom;
+  background-size: cover;
+}
+.first-content{
+  background: url(@firstContentBg) no-repeat center top;
+  background-size: cover;
+  height: ~'calc(100% - 156px)';
+  margin-top: -1px;
+}
+.first-pagefooter{
+  width: 196px;
+  height: 20px;
+  background: url(@bottomIcons) no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  margin-left: -98px;
+}
+.demo-gif{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+}
+.tobegin-btn{
+  background: url(@beginBtnBg) no-repeat;
+  background-size: contain;
+  width: 81px;
+  height: 80px;
+  margin-left: -40px;
+  left: 50%;
+  bottom: 55px;
+  position: absolute;
+}
+.guide{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 1990;
+  .guide-bg{
+    margin: 27px auto 0;
+    width: 309px;
+    height: 421px;
+    background: rgba(10,67,132,0.8);
+    border-radius: 5px;
+    padding-top: 31px;
+  }
+  .guide-header{
+    background: url(@guideTitleBg) no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 26px;
+  }
+  .guide-action{
+    background: url(@guideAction) no-repeat;
+    background-size: contain;
+    width: 243px;
+    height: 210px;
+    margin: 30px auto 13px;
+  }
+  .guide-info{
+    color: #85a0bc;
+    font-size: 12px;
+  }
+  .tostart-btn{
+    font-size: 17px;
+    background: #2054aa;
+    width: 129px;
+    height: 31px;
+    line-height: 31px;
+    border-radius: 20px;
+    margin: 34px auto 0;
+    z-index: 2000;
+  }
+}
+#game-canvas{
+  opacity: 0;
+  transition: opacity .3s ease-out;
+}
+.footbar{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .toggle-open{
+    border: 1px solid #fff;
+    width: 34px;
+    height: 21px;
+    background: #00a8ff;
+    float: right;
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+    margin-right: 12px;
+    &:before{
+      content: '';
+      display: block;
+      background: url(@arrow) no-repeat center;
+      background-size: 16px 10px;
+      width: 100%;
+      height: 100%;
+      transition: transform linear .3s;
+    }
+    &.closed:before{
+      transform: rotate(180deg);
+    }
+  }
+  .dosave{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    background: #00a8ff;
+    line-height: 38px;
+    font-size: 12px;
+    position: absolute;
+    right: 12px;
+    top: -62px;
+  }
+  .select-bar{
+    background-color: #0094e1;
+    li{
+      float: left;
+      height: 38px;
+      padding: 3px 0;
+      box-sizing: border-box;
+      transition: width .3s linear;
+      width: 14.66%;
+      padding: 0 2.4%;
+      position: relative;
+      // overflow: hidden;
+      &.actived{
+        background: #00a8ff;
+        width: 94px;
+        i{
+          background-color: #ffe21d;
+        }
+        em{
+          display: inline-block;
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          border-width: 0px 9px 9px 9px;
+          border-color: transparent;
+          border-style: solid;
+          border-top-style: none;
+          top: -6px;
+          z-index: 10;
+          border-bottom-color: #00a8ff;
+          left: 50%;
+          margin-left: -4px;
+        };
+      }
+      &:nth-child(2) i{
+        background-image: url(@faceTo);
+      }
+      &:nth-child(3) i{
+        background-image: url(@cloths);
+      }
+      &:nth-child(4) i{
+        background-image: url(@hair);
+      }
+      &:nth-child(5) i{
+        background-image: url(@scene);
+      }
+      &:nth-child(6) i{
+        background-image: url(@props);
+      }
+    }
+    i{
+      width: 31px;
+      height: 31px;
+      background: rgba(255,255,255,0.2) url(@people) no-repeat center;
+      background-size: contain;
+      vertical-align: middle;
+      position: absolute;
+      left: 11px;
+      top: 4px;
+      border-radius: 5px;
+      transition: background-color .3s linear;
+    }
+    em{
+      position: absolute;
+      left: 54px;
+      top: 50%;
+      width: 25px;
+      transform: translateY(-50%);
+      font-size: 10px;
+      vertical-align: middle;
+      display: none;
+      &:after{
+        content: '';
+        display: block;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+}
+.show-bar{
+  width: 100%;
+  height: 66px;
+  background-color: rgba(0,97,159,0.8);
+  border-top-left-radius: 26px;
+  overflow-x: auto;
+  transition: all linear .3s;
+  &.hide{
+    height: 0px;
+    opacity: 0;
+    & + .select-bar .actived:before{
+      display: none;
+    }
+  }
+  section{
+    display: none;
+    &.actived{
+      display: block;
+    }
+  }
+  .sex{
+    position: relative;
+  }
+  .show-bar-items{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 66px;
+    background-position: center;
+  }
+  .man-faceto{
+    background-image: url(@manFaceTo);
+    width: 283px;
+  }
+  .girl-faceto{
+    background-image: url(@girlFaceTo);
+    width: 283px;
+  }
+  .girl-cloth{
+    background-image: url(@girlCloth);
+    width: 525px;
+  }
+  .man-cloth{
+    background-image: url(@manCloth);
+    width: 525px;
+  }
+  .persons{
+    background-image: url(@persons);
+    width: 163px;
+  }
+  .man-hair{
+    background-image: url(@manHairs);
+    width: 467px;
+  }
+  .girl-hair{
+    background-image: url(@girlHairs);
+    width: 467px;
+  }
+  .show-scenes{
+    background-image: url(@showScene);
+    width: 344px;
+  }
+  .show-props{
+    background-image: url(@showProps);
+    width: 949px;
+  }
+  [data-showsex] .show-bar-items{
+    display: none;
+  }
+  [data-showsex="0"]{
+    .show-bar-items:first-child{
+      display: block;
+    }
+  }
+  [data-showsex="1"]{
+    .show-bar-items:last-child{
+      display: block;
+    }
+  }
+}
+.play-tip{
+  position: absolute;
+  left: 145px;
+  top: 20px;
+  font-size: 11px;
+  .arrow-guide{
+    background: url(@arrowGuide) no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 15px;
+    display: inline-block;
+    animation: arrowMove 1s linear infinite;
+  }
+  @keyframes arrowMove{
+    from{
+      transform: translate3d(67px,1px,0);
+    }
+    95%, 100%{
+      transform: translate3d(10px,1px,0);
+    }
+  }
+  i{
+    display: inline-block;
+    vertical-align: middle;
+    height: 2px;
+    width: 54px;
+    background: #fff;
+    position: relative;
+    &:before,&:after{
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50px;
+      background: #fff;
+      position: absolute;
+      top: -1px;
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+  p{
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 80px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #00a8ff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -8px;
+  }
+}
+.saved_img, .temp-imgs{
+  position: absolute;
+  top: 0;
+  z-index: 2999;
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}
+.is-mzapp .saved_img{
+  opacity: 0;
+  height: 80%;
+}
+
+.save-tip{
+  position: absolute;
+  bottom: 0;
+  z-index: 4000;
+  right: 25px;
+  height: 40px;
+  line-height: 40px;
+  color: #333333;
+  font-size: 12px;
+  transition: opacity .3s ease-out 2s;
+  .solid-circle{
+    width: 11px;
+    height: 11px;
+    border-radius: 50px;
+    border: 1px solid #707070;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    &:after{
+      content: '';
+      display: block;
+      width: 7px;
+      height: 7px;
+      background-color: #707070;
+      border-radius: 50px;
+      margin: 2px;
+    }
+  }
+}
+.share-content{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 126px;
+  z-index: 3000;
+  text-align: left;
+  background-color: #fff;
+  padding: 25px 7% 0;
+  box-sizing: border-box;
+  .left{
+    margin-top: -2px;
+  }
+  strong{
+    color: #333333;
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+  .btns{
+    margin: 10px 0;
+  }
+  button{
+    background-color: #00c3f5;
+    width: 88px;
+    height: 28px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  em{
+    color: #999999;
+    font-size: 9px;
+  }
+  i{
+    display: inline-block;
+    margin-left: -100%;
+  }
+  .share-apps{
+    background: url(@appsShareBg) no-repeat center;
+    background-size: contain;
+    width: 71px;
+    height: 56px;
+  }
+  .mz-store{
+    display: inline-block;
+    background: url(@mzStoreBg) no-repeat center;
+    background-size: contain;
+    width: 90px;
+    height: 28px;
+    vertical-align: middle;
+  }
+}
+.qrcode{
+  background: url(@qrCodeBg) no-repeat;
+  background-size: contain;
+  width: 73px;
+  height: 73px;
+}

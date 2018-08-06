@@ -1,0 +1,44 @@
+{"frames": {
+
+"cloth.png":
+{
+	"frame": {"x":308,"y":1,"w":175,"h":313},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":49,"w":175,"h":313},
+	"sourceSize": {"w":185,"h":387}
+},
+"hair.png":
+{
+	"frame": {"x":1,"y":1,"w":306,"h":434},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":306,"h":434},
+	"sourceSize": {"w":306,"h":434}
+},
+"left_shoe.png":
+{
+	"frame": {"x":308,"y":336,"w":91,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":20},
+	"sourceSize": {"w":91,"h":20}
+},
+"right_shoe.png":
+{
+	"frame": {"x":308,"y":315,"w":91,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":20},
+	"sourceSize": {"w":91,"h":20}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "backgirlcloth5.png",
+	"format": "RGBA8888",
+	"size": {"w":484,"h":436},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7f8200c0a532b9bd268b99a182e544ab:1/1$"
+}
+}

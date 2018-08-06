@@ -1,0 +1,68 @@
+{"frames": {
+
+"hair1.png":
+{
+	"frame": {"x":2,"y":1441,"w":193,"h":204},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":193,"h":204},
+	"sourceSize": {"w":193,"h":204}
+},
+"hair2.png":
+{
+	"frame": {"x":2,"y":1647,"w":191,"h":202},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":191,"h":202},
+	"sourceSize": {"w":191,"h":202}
+},
+"hair3.png":
+{
+	"frame": {"x":2,"y":293,"w":228,"h":214},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":228,"h":214},
+	"sourceSize": {"w":228,"h":214}
+},
+"hair4.png":
+{
+	"frame": {"x":2,"y":2,"w":231,"h":289},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":231,"h":289},
+	"sourceSize": {"w":231,"h":289}
+},
+"hair5.png":
+{
+	"frame": {"x":2,"y":739,"w":194,"h":391},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":194,"h":391},
+	"sourceSize": {"w":194,"h":391}
+},
+"hair6.png":
+{
+	"frame": {"x":2,"y":1132,"w":193,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":193,"h":307},
+	"sourceSize": {"w":193,"h":307}
+},
+"hair7.png":
+{
+	"frame": {"x":2,"y":509,"w":226,"h":228},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":228},
+	"sourceSize": {"w":226,"h":228}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "leftmanhair.png",
+	"format": "RGBA8888",
+	"size": {"w":235,"h":1851},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3c103e34dd04be208bd0c43f1fd27625:1/1$"
+}
+}

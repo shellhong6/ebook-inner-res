@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+html {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-overflow-scrolling:touch;
+    overflow-scrolling: touch;
+}
+body {
+    background-color: #fff;
+    font-family: "思源黑体 Regular", "Microsoft Yahei", Arial, Helvetica, sans-serif, "\u5b8b\u4f53";
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+body,
+div,
+h1, h2, h3, h4, p,
+form,
+label, input, textarea, img, span,
+dl, dd, dt,
+ol, ul, li,
+table, th, td, tr, thead, tfoot, tbody {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    letter-spacing: 0px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    color: inherit;
+}
+
+.none {
+    display: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+.bolder{
+    font-weight: 600;
+}
+.clearfix:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    display: block;
+    font-size: 0;
+    clear: both;
+}
+.marg_b5{
+    margin-bottom: 5px !important;
+}
+.marg_b10{
+    margin-bottom: 10px !important;
+}
+.marg-l5{
+    margin-left: 5px !important;
+}
+.marg-neg-l5{
+    margin-left: -5px !important;
+}
+.marg-r5{
+    margin-right: 5px !important;
+}
+.fz-18{
+    font-size: 18px !important;
+}
+.fz-16{
+    font-size: 16px !important;
+}
+.fz-14{
+    font-size: 14px !important;
+}
+.fz-12{
+    font-size: 12px !important;
+}
+.fz-13{
+    font-size: 13px !important;
+}
+.txt-left{
+    text-align: left;
+}
+.txt-right{
+    text-align: right;
+}
+.ver-alg-b{
+  vertical-align: bottom;
+}
+.ver-alg-m{
+  vertical-align: middle;
+}
+button{
+    border: 0;
+    outline: 0;
+}
+em{
+    font-style: normal;
+}
+.opacity-hide {
+  opacity: 0;
+}
+
+.opacity-show {
+  -webkit-transition: opacity .4s;
+  opacity: 1;
+}
+.nowrap{
+  white-space: nowrap;
+}
+.adver-title{
+  display: none;
+}
+.center-dlg .dialog-content{
+    text-align: center;
+}

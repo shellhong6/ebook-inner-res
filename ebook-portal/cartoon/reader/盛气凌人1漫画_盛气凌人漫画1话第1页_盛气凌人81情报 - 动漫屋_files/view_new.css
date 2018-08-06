@@ -1,0 +1,371 @@
+.vPage a{text-decoration: none;color: #000;}
+.vPage a:visited{color: #000;}
+/*顶部工具栏*/
+.vPage{background-color: #2c2c2c;font-family: 'Microsoft YaHei';}
+.vPage .topTool{position: relative;top: 0;left: 0;height: 55px;width: 100%;z-index: 999;}
+.vPage .topToolBar.s{top: 0;}
+.vPage .topTool:hover .topToolBar{top: 0;}
+.vPage .topToolBar{position: absolute;top: 0px;left: 0;height: 55px;line-height: 55px;width: 100%;background-color: #000;text-align: center;opacity: 0.95;border-bottom: 1px solid #2b2b2b;-webkit-transition: top 0.5s ease;-moz-transition: top 0.5s ease;transition: top 0.5s ease;}
+.vPage .topToolBar .center{font-size: 16px;color: #808080;}
+.vPage .topToolBar .center span{color: #ffffff;}
+.vPage .topToolBar .center a{color: #808080;}
+.vPage .topToolBar .center a.active{color: #fff;}
+.vPage .topToolBar .center a:hover{color: #fff;text-decoration: none;}
+.vPage .topToolBar .center h1.active{color: #fff;}
+.vPage .topToolBar .left{position: absolute;left: 15px;top: 0;font-size: 14px;color: #808080;text-decoration: none;}
+.vPage .topToolBar .left:hover{ color: #fff;}
+.vPage .topToolBar .left img{vertical-align: top;margin-top: 18px;margin-right: 5px;*margin-top: 0;}
+.vPage .topToolBar .right{position: absolute;right: 15px;top: 0;font-size: 12px;}
+.vPage .topToolBar .right a{color: #808080;border: 1px solid #808080;border-radius: 4px;padding: 3px 10px;margin-left: 5px;}
+.vPage .topToolBar .right a:hover{color: #131313;background-color: #808080;}
+.vPage .topToolBar .right a.shelf{margin-right: 10px;padding-left: 25px;background: url(../images/newImages/title_shelf.png) no-repeat 7px 5px;}
+
+.vPage .topToolBar .right a.shelf:hover{color: #131313;background-color: #808080;background-image: url(../images/newImages/title_shelf_hover.png);background-repeat: no-repeat;background-position: 7px 5px;}
+/*左侧工具栏*/
+.vPage .leftToolBar{width: 160px;position: fixed;top: 0;left: 0;background-color: #000;text-align: center;opacity: 0.95;border-right: 1px solid #2b2b2b;-webkit-transition: left 0.5s ease;-moz-transition: left 0.5s ease;transition: left 0.5s ease;}
+.vPage .leftToolBar.close{left: -161px;}
+.vPage .leftToolBar .logo{height: 45px;padding-top: 10px;}
+.vPage .leftToolBar .top{height: 35px;line-height: 35px;color: #808080;font-size: 14px;border-top: 1px solid #2b2b2b;}
+.vPage .leftToolBar .ctrl{display: inline-block;*display: inline;zoom: 1;height: 28px;width: 20px;position: absolute;right: -20px;top: 100px;background-color: #000;opacity: 0.95;text-align: center;padding-top: 7px;}
+.vPage .leftToolBar .ctrl_2{display: none;}
+.vPage .leftToolBar.close .ctrl_1{display: none;}
+.vPage .leftToolBar.close .ctrl_2{display: inline-block;*display: inline;zoom: 1;}
+.vPage .leftToolBar .list{width: 160px;overflow: hidden;}
+.vPage .leftToolBar ul{border-top: 1px solid #2b2b2b;padding: 10px 0;overflow-y: scroll;width: 178px;}
+.vPage .leftToolBar ul li{margin: 10px 0;}
+.vPage .leftToolBar ul li p{color: #fff;font-size: 14px;}
+/*阅读栏*/
+.vPage .viewBar{text-align: center;}
+.vPage .viewBar .item{display: inline-block;*display: inline;zoom: 1;/*margin-top: 20px;*/}
+.vPage .viewBar .item .ad{border-radius: 8px;}
+.vPage .viewBar .item p{font-size: 16px;color: #808080;text-align: right;}
+.vPage .viewBar .viewTool{margin: 9px auto;width: 960px;position: relative;height: 30px;}
+.vPage .viewBar .viewTool .left{float: left;color: #808080;font-size: 14px;line-height: 30px;}
+.vPage .viewBar .viewTool .right{float: right;z-index: 98;}
+.vPage .viewBar .viewTool .right a{background-color: #1a1a1a;color: #808080;font-size: 14px;width: 85px;height: 30px;line-height: 30px;display: inline-block;*display: inline;zoom: 1;border-radius: 3px;}
+.vPage .viewBar .viewTool .right a:hover{color: #fff;}
+.vPage .viewBar .viewTool .right a.arrow_down{padding-right: 10px;width: 75px;background-image: url(../images/newImages/view_arrow_down.png);background-repeat: no-repeat;background-position: 65px 13px;}
+.vPage .viewBar .viewTool .right a.arrow_up{padding-right: 10px;width: 75px;background-image: url(../images/newImages/view_arrow_up.png);background-repeat: no-repeat;background-position: 65px 13px;}
+.vPage .viewBar .viewTool .right a.list{padding-left: 20px;width: 65px;background-image: url(../images/newImages/view_list.png);background-repeat: no-repeat;background-position: 13px 9px;}
+/*右侧工具栏*/
+.vPage .rightToolBar{position: fixed;right: 20px;bottom: 20px;height: 50px;background-color: #1a1a1a;padding: 0 10px;border-radius: 3px;border: 1px solid #222;}
+.vPage .rightToolBar a{display: block;float: left;height: 30px;width: 34px;margin: 10px 8px;position: relative;}
+.vPage .rightToolBar a .tip{height: 25px;line-height: 25px;color: #808080;width: 50px;text-align: center;position: absolute;top: -40px;left: -10px;background-color: #1a1a1a;display: none;}
+.vPage .rightToolBar a:hover .tip{display: block;}
+.vPage .rightToolBar a.logo_1{background-image: url(../images/newImages/view_tool_bak.png);background-repeat: no-repeat;background-position: -24px -14px;}
+.vPage .rightToolBar a.logo_2{background-image: url(../images/newImages/view_tool_bak.png);background-repeat: no-repeat;background-position: -77px -14px;}
+.vPage .rightToolBar a.logo_3{background-image: url(../images/newImages/view_tool_bak.png);background-repeat: no-repeat;background-position: -139px -14px;}
+.vPage .rightToolBar a.active.logo_3{background-image: url(../images/newImages/view_tool_bak_a.png);background-repeat: no-repeat;background-position: -139px -14px;}
+.vPage .rightToolBar a.logo_4{background-image: url(../images/newImages/view_tool_bak.png);background-repeat: no-repeat;background-position: -197px -14px;}
+.vPage .rightToolBar a.active.logo_4{background-image: url(../images/newImages/view_tool_bak_a.png);background-repeat: no-repeat;background-position: -197px -14px;}
+.vPage .rightToolBar a.logo_5{background-image: url(../images/newImages/view_tool_bak.png);background-repeat: no-repeat;background-position: -249px -14px;}
+.vPage .rightToolBar a.logo_1:hover{background-image: url(../images/newImages/view_tool_bak.png);background-repeat: no-repeat;background-position: -24px -69px;}
+.vPage .rightToolBar a.logo_2:hover{background-image: url(../images/newImages/view_tool_bak.png);background-repeat: no-repeat;background-position: -77px -69px;}
+.vPage .rightToolBar a.logo_3:hover{background-image: url(../images/newImages/view_tool_bak.png);background-repeat: no-repeat;background-position: -139px -69px;}
+.vPage .rightToolBar a.active.logo_3:hover{background-image: url(../images/newImages/view_tool_bak_a.png);background-repeat: no-repeat;background-position: -139px -69px;}
+.vPage .rightToolBar a.logo_4:hover{background-image: url(../images/newImages/view_tool_bak.png);background-repeat: no-repeat;background-position: -197px -69px;}
+.vPage .rightToolBar a.active.logo_4:hover{background-image: url(../images/newImages/view_tool_bak_a.png);background-repeat: no-repeat;background-position: -197px -69px;}
+.vPage .rightToolBar a.logo_5:hover{background-image: url(../images/newImages/view_tool_bak.png);background-repeat: no-repeat;background-position: -249px -69px;}
+/*章节栏*/
+.vPage .chapterBar{width: 360px;background-color: #1a1a1a;border-radius: 3px;display: none;border: 1px solid #333;z-index: 99;}
+.vPage .chapterBar.down{position: absolute;right: 287px;top: 40px;}
+.vPage .chapterBar.up{position: absolute;right: 285px;bottom: 40px;}
+.vPage .chapterBar .selector{height: 45px;border-bottom: 1px solid #2b2b2b;text-align: center;}
+.vPage .chapterBar .selector li{width: 76px;height: 48px;line-height: 45px;display: inline-block;*display: inline;zoom: 1;color: #808080;font-size: 18px;cursor: pointer;}
+.vPage .chapterBar .selector li.active{color: #fff;background-image: url(../images/newImages/view_bottom_bak.png);background-repeat: no-repeat;background-position: 0px 43px;}
+.vPage .chapterBar .scroll{overflow: hidden;}
+.vPage .chapterBar .list{padding: 8px 0;text-align: left;padding-left: 12px;max-height: 282px;width: 380px;overflow-y: scroll;}
+.vPage .chapterBar .list a{margin: 5px;text-align: center;color: #808080;border: 1px solid #808080;border-radius: 3px;height: 30px;line-height: 30px;width: 70px;display: inline-block;*display: inline;zoom: 1;font-size: 12px;}
+.vPage .chapterBar .list a.active{color: #1a1a1a;border: 1px solid #fff;background-color: #fff;}
+.vPage .chapterBar .list a:hover{color: #1a1a1a;border: 1px solid #fff;background-color: #fff;}
+/*历史栏*/
+.vPage .historyBar{position: fixed;right: 20px;top: 70px;width: 310px;background-color: #1a1a1a;border-radius: 3px;display: none;z-index: 99;}
+.vPage .historyBar .selector{height: 45px;border-bottom: 1px solid #2b2b2b;text-align: center;}
+.vPage .historyBar .selector li{width: 116px;height: 48px;line-height: 45px;display: inline-block;*display: inline;zoom: 1;color: #808080;font-size: 14px;cursor: pointer;}
+.vPage .historyBar .selector li.active{color: #fff;background-image: url(../images/newImages/view_bottom_bak_1.png);background-repeat: no-repeat;background-position: 0px 43px;}
+.vPage .historyBar .scroll{overflow: hidden;}
+.vPage .historyBar .list{padding: 10px;text-align: center;max-height: 360px;width: 330px;overflow-y: scroll;}
+.vPage .historyBar .list .noData{color: #fff;}
+.vPage .historyBar .list .item{padding: 10px;overflow: hidden;}
+.vPage .historyBar .list .item img{float: left;}
+.vPage .historyBar .list .item .info{float: left;padding-left: 10px;width: 163px;height: 140px;text-align: left;}
+.vPage .historyBar .list .item .info .title a{font-size: 14px;color: #fff;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 145px;display: block;}
+.vPage .historyBar .list .item .info .subtitle{font-size: 12px;color: #808080;margin-top: 5px;}
+.vPage .historyBar .list .item .info .subtitle a{color: #fff;margin-left: 5px;}
+.vPage .historyBar .list .item .info .bottom{margin-top: 80px;}
+.vPage .historyBar .list .item .info .bottom a{font-size: 12px;color: #fff;}
+/*评论栏*/
+.vPage .commentBar{position: fixed;right: 20px;bottom: 80px;width: 350px;background-color: #1a1a1a;border-radius: 3px;display: none;}
+.vPage .commentBar .top{height: 45px;line-height: 45px;border-bottom: 1px solid #2b2b2b;text-align: center;color: #fff;position: relative;}
+.vPage .commentBar .top .close{position: absolute;right: 10px;top: 0px;color: #adadad;font-size: 12px;padding-right: 17px;background-image: url(../images/newImages/view_comment_close.png);background-repeat: no-repeat;background-position: right 16px;}
+.vPage .commentBar .scroll{overflow: hidden;padding: 10px;}
+.vPage .commentBar .list{max-height: 360px;width: 348px;overflow-y: scroll;padding-right: 10px;}
+.vPage .commentBar .list .item{background-color: #2c2c2c;padding: 0 10px;border-radius: 3px;margin-top: 10px;}
+.vPage .commentBar .list .item:first-child{margin-top: 0;}
+.vPage .commentBar .list .item .title{height: 35px;line-height: 35px;font-size: 14px;color: #fff;border-bottom: 1px dashed #1a1a1a;}
+.vPage .commentBar .list .item .title .date{float: right;font-size: 12px;color: #808080;}
+.vPage .commentBar .list .item .content{font-size: 12px;color: #adadad;line-height: 20px;padding: 5px 0;}
+.vPage .commentBar .publish{padding: 10px;overflow: hidden;padding-top: 5px;text-align: center;}
+.vPage .commentBar .publish .unlogin{height: 30px;line-height: 30px;width: 220px;border: 1px solid #4b4b4b;border-radius: 3px;background-color: #2c2c2c;padding: 0 10px;font-size: 12px;color: #808080;float: left;}
+.vPage .commentBar .publish .unlogin a{color: #fefefe;margin-left: 5px;}
+.vPage .commentBar .publish .unlogin .border{border-left: 1px solid #fefefe;margin-left: 5px;}
+.vPage .commentBar .publish .btn{float: left;color: #2b2b2b;font-size: 12px;background-color: #d0d0d0;border-radius: 3px;display: block;height: 32px;line-height: 32px;width: 75px;margin-left: 10px;text-align: center;}
+/*页码栏*/
+.vPage .pageBar{width: 90px;background-color: #1a1a1a;border-radius: 3px;display: none;border: 1px solid #333;max-height: 500px;overflow-y: auto;z-index: 99;}
+.vPage .pageBar.down{position: absolute;right: 460px;top: 32px;}
+.vPage .pageBar.up{position: absolute;right: 460px;bottom: 32px;}
+.vPage .pageBar a{display: block;height: 26px;line-height: 26px;font-size: 14px;color: #808080;}
+.vPage .pageBar a:hover{color: #fff;}
+.vPage .pageBar a.active{background-color: #fff;color: #1a1a1a;}
+/*评论列表*/
+.vPage .commentList{width: 960px;margin: 18px auto;border: 1px solid #333;background-color: #1a1a1a;}
+.vPage .commentList .top{height: 45px;line-height: 45px;border-bottom: 1px solid #333;padding: 0 20px;}
+.vPage .commentList .top .left{float: left;color: #fff;font-size: 18px;}
+.vPage .commentList .top .right{float: right;color: #a6a6a6;font-size: 12px;}
+.vPage .commentList .top .right a{color: #fff;margin-left: 5px;}
+.vPage .commentList .top .right a:hover{text-decoration: underline;}
+.vPage .commentList .title{height: 45px;line-height: 45px;padding: 0 20px;color: #fff;text-align: left;}
+.vPage .commentList .title a{color: #808080;float: right;}
+.vPage .commentList .title a:hover{text-decoration: underline;}
+.vPage .commentList .list{padding: 0 20px;}
+.vPage .commentList .list li{border-top: 1px solid #333;overflow: hidden;padding-bottom: 15px;}
+.vPage .commentList .list li img{float: left;width: 50px;height: 50px;border: 1px solid #fff;margin-top: 14px;}
+.vPage .commentList .list li .info{float: left;padding-left: 10px;width: 856px;margin-top: 15px;}
+.vPage .commentList .list li .info p.n{color: #fff;font-size: 14px;text-align: left;}
+.vPage .commentList .list li .info p.n .right{float: right;}
+.vPage .commentList .list li .info p.n .right a{color: #fff;font-size: 14px;margin-left: 10px;}
+.vPage .commentList .list li .info p.n .right a:hover{text-decoration: underline;}
+.vPage .commentList .list li .info p.n .date{color: #737373;font-size: 12px;margin-left: 10px;}
+.vPage .commentList .list li .info p.c{font-size: 12px;color: #d4d4d4;text-align: left;margin-top: 10px;line-height: 20px;word-break:break-all;}
+.vPage .commentList .more{height: 40px;line-height: 40px;background-color: #212121;color: #fff;border-top: 1px solid #333;background-image: url(../images/newImages/view_comment_more.png);background-repeat: no-repeat;background-position: 515px 16px;display: block;}
+.vPage .moreComment{width: 960px;margin: 0 auto;text-align: right;}
+.vPage .moreComment a{color: #d9d7d7;font-size: 12px;text-decoration: underline;}
+/*输入栏*/
+.vPage .inputBar{width: 920px;margin: 20px auto;padding: 20px;background-color: #1a1a1a;overflow: hidden;}
+.vPage .inputBar .avatar{width: 100px;height: 100px;float: left;}
+.vPage .inputBar .info{width: 800px;padding-left: 20px;float: left;}
+.vPage .inputBar .info .k{width: 800px;height: 130px;line-height: 130px;text-align: center;background-color: #212121;color: #808080;font-size: 12px;border: 1px solid #333;border-radius: 5px;margin-bottom: 10px;background: #fff url(../images/tst.gif) no-repeat 96% 98%;}
+.vPage .inputBar .info .k a{color: #222;margin-left: 10px;}
+.vPage .inputBar .info .k a:hover{text-decoration: underline;}
+.vPage .inputBar .info textarea.k{color: #222;}
+.vPage .inputBar .info .publish{width: 75px;height: 30px;line-height: 30px;color: #fff;background-color: #dd2626;float: right;display: inline-block;*display: inline;zoom:1;font-size: 12px;border-radius: 5px;border:none;cursor: pointer;}
+.vPage .inputBar .info .publish:hover{background-color: #a90c11;}
+.vPage .inputBar .info .code{height: 30px;line-height: 30px;float: left;color: #fff;font-size: 12px;}
+.vPage .inputBar .info .code input{height: 30px;line-height:30px;background-color: #212121;border: 1px solid #333;margin-right: 10px;width: 80px;border-radius: 5px;color: #fff;padding: 0 10px;}
+.vPage .inputBar .info .code img{vertical-align: top;height: 32px;}
+/*今日漫画*/
+.vPage .today{width: 960px;margin: 20px auto;border: 1px solid #333;background-color: #1a1a1a;}
+.vPage .today .top{height: 45px;line-height: 45px;border-bottom: 1px solid #333;padding: 0 20px;}
+.vPage .today .top .left{float: left;color: #fff;font-size: 18px;}
+.vPage .today .list{padding: 20px;text-align: left;}
+.vPage .today .list ul{overflow: hidden;text-align: center;margin-bottom: 10px;}
+.vPage .today .list ul li{float: left;padding: 2px;border: 1px solid #444;margin: 0 6px;font-size: 0;}
+.vPage .today .list ul li:hover{border: 1px solid #dd2727;}
+.vPage .today .list ul li img{width: 43px;height: 43px;}
+.vPage .today .list a{color: #808080;font-size: 12px;line-height: 20px;}
+.vPage .today .list a:hover{ color: #dd2626;}
+
+/*顶部工具栏*/
+.vPage.white{background-color: #e9e9e9;font-family: 'Microsoft YaHei';}
+.vPage.white .topTool{position: relative;top: 0;left: 0;height: 55px;width: 100%;z-index: 999;}
+.vPage.white .topTool:hover .topToolBar{top: 0;}
+.vPage.white .topToolBar{position: absolute;top: 0px;left: 0;height: 55px;line-height: 55px;width: 100%;background-color: #fff;text-align: center;opacity: 0.95;border-bottom: 1px solid #d7d7d7;-webkit-transition: top 0.5s ease;-moz-transition: top 0.5s ease;transition: top 0.5s ease;}
+.vPage.white .topToolBar .center{font-size: 16px;color: #808080;}
+.vPage.white .topToolBar .center span{color: #212121;}
+.vPage.white .topToolBar .center a.active{color: #222;}
+.vPage.white .topToolBar .center a:hover{color: #222;text-decoration: none;}
+.vPage.white .topToolBar .center h1.active{color: #222;}
+.vPage.white .topToolBar .left{position: absolute;left: 15px;top: 0;font-size: 14px;color: #808080;text-decoration: none;}
+.vPage.white .topToolBar .left:hover{ color:#000}
+.vPage.white .topToolBar .left img{vertical-align: top;margin-top: 18px;margin-right: 5px;*margin-top: 0;}
+.vPage.white .topToolBar .right{position: absolute;right: 15px;top: 0;font-size: 12px;}
+.vPage.white .topToolBar .right a{color: #808080;border: 1px solid #808080;border-radius: 4px;padding: 3px 10px;margin-left: 5px;}
+.vPage.white .topToolBar .right a:hover{color: #fff;background-color: #808080;}
+.vPage.white .topToolBar .right a.shelf{margin-right: 10px;padding-left: 25px;background: url(../images/newImages/title_shelf.png) no-repeat 7px 5px;}
+.vPage.white .topToolBar .right a.shelf:hover{color: #fff;background-color: #808080;background-image: url(../images/newImages/title_shelf_hover_w.png);background-repeat: no-repeat;background-position: 7px 5px;}
+/*左侧工具栏*/
+.vPage.white .leftToolBar{width: 160px;position: fixed;top: 0;left: 0;background-color: #000;text-align: center;opacity: 0.95;border-right: 1px solid #2b2b2b;-webkit-transition: left 0.5s ease;-moz-transition: left 0.5s ease;transition: left 0.5s ease;}
+.vPage.white .leftToolBar.close{left: -161px;}
+.vPage.white .leftToolBar .logo{height: 45px;padding-top: 10px;}
+.vPage.white .leftToolBar .top{height: 35px;line-height: 35px;color: #808080;font-size: 14px;border-top: 1px solid #2b2b2b;}
+.vPage.white .leftToolBar .ctrl{display: inline-block;*display: inline;zoom: 1;height: 28px;width: 20px;position: absolute;right: -20px;top: 100px;background-color: #000;opacity: 0.95;text-align: center;padding-top: 7px;}
+.vPage.white .leftToolBar .ctrl_2{display: none;}
+.vPage.white .leftToolBar.close .ctrl_1{display: none;}
+.vPage.white .leftToolBar.close .ctrl_2{display: inline-block;*display: inline;zoom: 1;}
+.vPage.white .leftToolBar .list{width: 160px;overflow: hidden;}
+.vPage.white .leftToolBar ul{border-top: 1px solid #2b2b2b;padding: 10px 0;overflow-y: scroll;width: 178px;}
+.vPage.white .leftToolBar ul li{margin: 10px 0;}
+.vPage.white .leftToolBar ul li p{color: #fff;font-size: 14px;}
+/*阅读栏*/
+.vPage.white .viewBar{text-align: center;}
+.vPage.white .viewBar .item{display: inline-block;*display: inline;zoom: 1;/*margin-top: 20px;*/}
+.vPage.white .viewBar .item .ad{border-radius: 8px;}
+.vPage.white .viewBar .item p{font-size: 16px;color: #808080;text-align: right;}
+.vPage.white .viewBar .viewTool{margin: 18px auto;width: 960px;position: relative;height: 30px;}
+.vPage.white .viewBar .viewTool .left{float: left;color: #808080;font-size: 14px;}
+.vPage.white .viewBar .viewTool .right{float: right;z-index: 98;}
+.vPage.white .viewBar .viewTool .right a{background-color: #fff;color: #808080;font-size: 14px;width: 85px;height: 30px;line-height: 30px;display: inline-block;*display: inline;zoom: 1;border-radius: 3px;}
+.vPage.white .viewBar .viewTool .right a:hover{color: #222;}
+.vPage.white .viewBar .viewTool .right a.arrow_down{padding-right: 10px;width: 75px;background-image: url(../images/newImages/view_arrow_down.png);background-repeat: no-repeat;background-position: 65px 13px;}
+.vPage.white .viewBar .viewTool .right a.arrow_up{padding-right: 10px;width: 75px;background-image: url(../images/newImages/view_arrow_up.png);background-repeat: no-repeat;background-position: 65px 13px;}
+.vPage.white .viewBar .viewTool .right a.list{padding-left: 20px;width: 65px;background-image: url(../images/newImages/view_list.png);background-repeat: no-repeat;background-position: 13px 9px;}
+/*右侧工具栏*/
+.vPage.white .rightToolBar{position: fixed;right: 20px;bottom: 20px;height: 50px;background-color: #fff;padding: 0 10px;border-radius: 3px;}
+.vPage.white .rightToolBar a{display: block;float: left;height: 30px;width: 34px;margin: 10px 8px;}
+.vPage.white .rightToolBar a .tip{height: 25px;line-height: 25px;color: #808080;width: 50px;text-align: center;position: absolute;top: -40px;left: -10px;background-color: #fff;display: none;}
+.vPage.white .rightToolBar a:hover .tip{display: block;}
+.vPage.white .rightToolBar a.logo_1{background-image: url(../images/newImages/view_tool_bak_w.png);background-repeat: no-repeat;background-position: -24px -13px;}
+.vPage.white .rightToolBar a.logo_2{background-image: url(../images/newImages/view_tool_bak_w.png);background-repeat: no-repeat;background-position: -77px -13px;}
+.vPage.white .rightToolBar a.logo_3{background-image: url(../images/newImages/view_tool_bak_w.png);background-repeat: no-repeat;background-position: -139px -13px;}
+.vPage.white .rightToolBar a.active.logo_3{background-image: url(../images/newImages/view_tool_bak_w_a.png);background-repeat: no-repeat;background-position: -139px -13px;}
+.vPage.white .rightToolBar a.logo_4{background-image: url(../images/newImages/view_tool_bak_w.png);background-repeat: no-repeat;background-position: -197px -13px;}
+.vPage.white .rightToolBar a.active.logo_4{background-image: url(../images/newImages/view_tool_bak_w_a.png);background-repeat: no-repeat;background-position: -197px -13px;}
+.vPage.white .rightToolBar a.logo_5{background-image: url(../images/newImages/view_tool_bak_w.png);background-repeat: no-repeat;background-position: -249px -13px;}
+.vPage.white .rightToolBar a.logo_1:hover{background-image: url(../images/newImages/view_tool_bak_w.png);background-repeat: no-repeat;background-position: -24px -69px;}
+.vPage.white .rightToolBar a.logo_2:hover{background-image: url(../images/newImages/view_tool_bak_w.png);background-repeat: no-repeat;background-position: -77px -69px;}
+.vPage.white .rightToolBar a.logo_3:hover{background-image: url(../images/newImages/view_tool_bak_w.png);background-repeat: no-repeat;background-position: -139px -69px;}
+.vPage.white .rightToolBar a.active.logo_3:hover{background-image: url(../images/newImages/view_tool_bak_w_a.png);background-repeat: no-repeat;background-position: -139px -69px;}
+.vPage.white .rightToolBar a.logo_4:hover{background-image: url(../images/newImages/view_tool_bak_w.png);background-repeat: no-repeat;background-position: -197px -69px;}
+.vPage.white .rightToolBar a.active.logo_4:hover{background-image: url(../images/newImages/view_tool_bak_w_a.png);background-repeat: no-repeat;background-position: -197px -69px;}
+.vPage.white .rightToolBar a.logo_5:hover{background-image: url(../images/newImages/view_tool_bak_w.png);background-repeat: no-repeat;background-position: -249px -69px;}
+/*章节栏*/
+.vPage.white .chapterBar{width: 360px;background-color: #fff;border-radius: 3px;display: none;z-index: 99;}
+.vPage.white .chapterBar.down{position: absolute;right: 287px;top: 40px;}
+.vPage.white .chapterBar.up{position: absolute;right: 285px;bottom: 40px;}
+.vPage.white .chapterBar .selector{height: 45px;border-bottom: 1px solid #dadada;text-align: center;}
+.vPage.white .chapterBar .selector li{width: 76px;height: 48px;line-height: 45px;display: inline-block;*display: inline;zoom: 1;color: #808080;font-size: 18px;cursor: pointer;}
+.vPage.white .chapterBar .selector li.active{color: #212121;background-image: url(../images/newImages/view_bottom_bak_w.png);background-repeat: no-repeat;background-position: 0px 43px;}
+.vPage.white .chapterBar .scroll{overflow: hidden;}
+.vPage.white .chapterBar .list{padding: 8px 0;text-align: left;max-height: 294px;width: 380px;overflow-y: scroll;padding-left: 12px;}
+.vPage.white .chapterBar .list a{margin: 5px;text-align: center;color: #808080;border: 1px solid #808080;border-radius: 3px;height: 30px;line-height: 30px;width: 70px;display: inline-block;*display: inline;zoom: 1;font-size: 12px;}
+.vPage.white .chapterBar .list a.active{color: #fff;border: 1px solid #808080;background-color: #808080;}
+.vPage.white .chapterBar .list a:hover{color: #fff;border: 1px solid #808080;background-color: #808080;}
+/*历史栏*/
+.vPage.white .historyBar{position: fixed;right: 20px;top: 70px;width: 310px;background-color: #fff;border-radius: 3px;display: none;}
+.vPage.white .historyBar .selector{height: 45px;border-bottom: 1px solid #dadada;text-align: center;}
+.vPage.white .historyBar .selector li{width: 116px;height: 48px;line-height: 45px;display: inline-block;*display: inline;zoom: 1;color: #808080;font-size: 14px;cursor: pointer;}
+.vPage.white .historyBar .selector li.active{color: #212121;background-image: url(../images/newImages/view_bottom_bak_1_w.png);background-repeat: no-repeat;background-position: 0px 43px;}
+.vPage.white .historyBar .scroll{overflow: hidden;}
+.vPage.white .historyBar .list{padding: 10px;text-align: center;max-height: 360px;width: 330px;overflow-y: scroll;}
+.vPage.white .historyBar .list .noData{color: #222;}
+.vPage.white .historyBar .list .item{padding: 10px;overflow: hidden;}
+.vPage.white .historyBar .list .item img{float: left;}
+.vPage.white .historyBar .list .item .info{float: left;padding-left: 10px;width: 163px;height: 140px;text-align: left;}
+.vPage.white .historyBar .list .item .info .title a{font-size: 14px;color: #212121;}
+.vPage.white .historyBar .list .item .info .subtitle{font-size: 12px;color: #808080;margin-top: 5px;}
+.vPage.white .historyBar .list .item .info .subtitle a{color: #212121;margin-left: 5px;}
+.vPage.white .historyBar .list .item .info .bottom{margin-top: 80px;}
+.vPage.white .historyBar .list .item .info .bottom a{font-size: 12px;color: #212121;}
+/*评论栏*/
+.vPage.white .commentBar{position: fixed;right: 20px;bottom: 80px;width: 350px;background-color: #1a1a1a;border-radius: 3px;display: none;}
+.vPage.white .commentBar .top{height: 45px;line-height: 45px;border-bottom: 1px solid #2b2b2b;text-align: center;color: #fff;position: relative;}
+.vPage.white .commentBar .top .close{position: absolute;right: 10px;top: 0px;color: #adadad;font-size: 12px;padding-right: 17px;background-image: url(../images/newImages/view_comment_close.png);background-repeat: no-repeat;background-position: right 16px;}
+.vPage.white .commentBar .scroll{overflow: hidden;padding: 10px;}
+.vPage.white .commentBar .list{max-height: 360px;width: 348px;overflow-y: scroll;padding-right: 10px;}
+.vPage.white .commentBar .list .item{background-color: #2c2c2c;padding: 0 10px;border-radius: 3px;margin-top: 10px;}
+.vPage.white .commentBar .list .item:first-child{margin-top: 0;}
+.vPage.white .commentBar .list .item .title{height: 35px;line-height: 35px;font-size: 14px;color: #fff;border-bottom: 1px dashed #1a1a1a;}
+.vPage.white .commentBar .list .item .title .date{float: right;font-size: 12px;color: #808080;}
+.vPage.white .commentBar .list .item .content{font-size: 12px;color: #adadad;line-height: 20px;padding: 5px 0;}
+.vPage.white .commentBar .publish{padding: 10px;overflow: hidden;padding-top: 5px;text-align: center;}
+.vPage.white .commentBar .publish .unlogin{height: 30px;line-height: 30px;width: 220px;border: 1px solid #4b4b4b;border-radius: 3px;background-color: #2c2c2c;padding: 0 10px;font-size: 12px;color: #808080;float: left;}
+.vPage.white .commentBar .publish .unlogin a{color: #fefefe;margin-left: 5px;}
+.vPage.white .commentBar .publish .unlogin .border{border-left: 1px solid #fefefe;margin-left: 5px;}
+.vPage.white .commentBar .publish .btn{float: left;color: #2b2b2b;font-size: 12px;background-color: #d0d0d0;border-radius: 3px;display: block;height: 32px;line-height: 32px;width: 75px;margin-left: 10px;text-align: center;}
+/*页码栏*/
+.vPage.white .pageBar{width: 90px;background-color: #fff;border-radius: 3px;display: none;border: 1px solid #808080;z-index: 99;}
+.vPage.white .pageBar.down{position: absolute;right: 460px;top: 32px;}
+.vPage.white .pageBar.up{position: absolute;right: 460px;bottom: 32px;}
+.vPage.white .pageBar a{display: block;height: 26px;line-height: 26px;font-size: 14px;color: #808080;}
+.vPage.white .pageBar a:hover{color: #212121;}
+.vPage.white .pageBar a.active{background-color: #808080;color: #fff;}
+/*评论列表*/
+.vPage.white .commentList{width: 960px;margin: 20px auto;border: 1px solid #dadada;background-color: #fff;}
+.vPage.white .commentList .top{height: 45px;line-height: 45px;border-bottom: 1px solid #dadada;padding: 0 20px;}
+.vPage.white .commentList .top .left{float: left;color: #212121;font-size: 18px;}
+.vPage.white .commentList .top .right{float: right;color: #a6a6a6;font-size: 12px;}
+.vPage.white .commentList .top .right a{color: #212121;margin-left: 5px;}
+.vPage.white .commentList .title{height: 45px;line-height: 45px;padding: 0 20px;color: #212121;text-align: left;}
+.vPage.white .commentList .list{padding: 0 20px;}
+.vPage.white .commentList .list li{border-top: 1px solid #dadada;overflow: hidden;padding-bottom: 15px;}
+.vPage.white .commentList .list li img{float: left;width: 50px;height: 50px;border: 1px solid #808080;margin-top: 14px;}
+.vPage.white .commentList .list li .info{float: left;padding-left: 10px;width: 856px;margin-top: 15px;}
+.vPage.white .commentList .list li .info p.n{color: #212121;font-size: 14px;text-align: left;}
+.vPage.white .commentList .list li .info p.n .right{float: right;}
+.vPage.white .commentList .list li .info p.n .right a{color: #212121;font-size: 14px;margin-left: 10px;}
+.vPage.white .commentList .list li .info p.n .date{color: #737373;font-size: 12px;margin-left: 10px;}
+.vPage.white .commentList .list li .info p.c{font-size: 12px;color: #737373;text-align: left;margin-top: 10px;line-height: 20px;word-break: break-all;}
+.vPage.white .commentList .more{height: 40px;line-height: 40px;background-color: #fff;color: #212121;border-top: 1px solid #dadada;background-image: url(../images/newImages/view_comment_more_w.png);background-repeat: no-repeat;background-position: 515px 16px;display: block;}
+.vPage.white .moreComment{width: 960px;margin: 0 auto;text-align: right;}
+.vPage.white .moreComment a{color: #212121;font-size: 12px;text-decoration: underline;}
+/*输入栏*/
+.vPage.white .inputBar{width: 920px;margin: 20px auto;padding: 20px;background-color: #fff;overflow: hidden;border: 1px solid #dadada;}
+.vPage.white .inputBar .avatar{width: 100px;height: 100px;float: left;}
+.vPage.white .inputBar .info{width: 800px;padding-left: 20px;float: left;}
+.vPage.white .inputBar .info .k{width: 800px;height: 130px;line-height: 130px;text-align: center;background-color: #f7f7f7;color: #808080;font-size: 12px;border: 1px solid #dadada;border-radius: 5px;margin-bottom: 10px;background: #fff url(../images/tst.gif) no-repeat 96% 98%;}
+.vPage.white .inputBar .info .k a{color: #212121;margin-left: 10px;}
+.vPage.white .inputBar .info textarea.k{color: #222;}
+.vPage.white .inputBar .info .publish{width: 75px;height: 30px;line-height: 30px;color: #fff;background-color: #dd2727;float: right;display: inline-block;*display: inline;zoom:1;font-size: 12px;border-radius: 5px;}
+.vPage.white .inputBar .info .publish:hover{background-color: #a90c11;}
+.vPage.white .inputBar .info .code{height: 30px;line-height: 30px;float: left;color: #212121;font-size: 12px;}
+.vPage.white .inputBar .info .code input{height: 30px;line-height:30px;background-color: #f2f2f2;border: 1px solid #dadada;margin-right: 10px;width: 80px;border-radius: 5px;color: #333;padding: 0 10px;}
+.vPage.white .inputBar .info .code img{vertical-align: top;}
+/*今日漫画*/
+.vPage.white .today{width: 960px;margin: 20px auto;border: 1px solid #dadada;background-color: #fff;}
+.vPage.white .today .top{height: 45px;line-height: 45px;border-bottom: 1px solid #dadada;padding: 0 20px;}
+.vPage.white .today .top .left{float: left;color: #212121;font-size: 18px;}
+.vPage.white .today .list{padding: 20px;text-align: left;}
+.vPage.white .today .list ul{overflow: hidden;text-align: center;}
+.vPage.white .today .list ul li{float: left;padding: 2px;border: 1px solid #ddd;margin: 0 6px;font-size: 0;}
+.vPage.white .today .list ul li:hover{border: 1px solid #dd2727;}
+.vPage.white .today .list ul li img{width: 43px;height: 43px;}
+.vPage.white .today .list a{color: #808080;font-size: 12px;}
+.vPage.white .today .list a:hover{color: #dd2626;}
+
+.vPage #cp_footer{background-color: #1a1a1a;}
+.vPage.white #cp_footer{background-color: #fff;}
+
+.vPage .tsmy{border: 2px solid #fff;background: #2c2c2c url(../images/newImages/tsh1.png) no-repeat 15px 15px;height: 50px;color: #fff;margin-bottom: 10px;padding: 20px 10px 20px 95px;line-height: 22px;margin-top: 20px!important;}
+.vPage .tsmy a{color: #fff!important;}
+.vPage.white .tsmy{border: 2px solid #a00;background: #fef5f7 url(../images/tsh.png) no-repeat 15px 15px;height: 50px;color: #a00;margin-bottom: 10px;padding: 20px 10px 20px 95px;line-height: 22px;margin-top: 20px!important;}
+.vPage.white .tsmy a{color: #A00!important;}
+
+.vPage .noA{color: #fff;text-decoration: underline;}
+.vPage.white .noA{color: #222;text-decoration: underline;}
+
+.vPage .view_user{color: #808080!important;text-align: center;float: none;background-color: #1a1a1a;padding-top: 10px;}
+.vPage .view_user a{color: #808080!important;}
+.vPage .view_user a:visited{color: #808080!important;}
+.vPage .view_user a:hover{color: #dd2626!important;text-decoration: none;}
+.vPage.white .view_user{color: #808080;text-align: center;float: none;background-color: #fff;padding-top: 10px;}
+.vPage.white .view_user a{color: #808080;}
+.vPage.white .view_user a:visited{color: #808080;}
+.vPage.white .view_user a:hover{color: #dd2626;text-decoration: none;}
+.yddiv{ margin:0 auto; width:960px;overflow: hidden;}
+
+#cc2{margin-bottom: 20px;}
+#cc3{margin-top: 20px;}
+
+
+
+.vPage .search_fy a:visited{color: #fff;}
+.search_fy{margin:20px 0; clear:both; text-align:center;color: #fff;}
+.search_fy a{border:1px solid #1a1a1a; font-size:12px; padding:5px 9px; *line-height:28px!important; margin:0 4px; color:#fff; text-decoration:none;}
+.search_fy a:hover{background:#be1e1e; padding:4px 9px; text-decoration:none; border-color:#1a1a1a; color:#fff;}
+.search_fy .current{font-size:12px; padding:5px 9px; margin:0 4px; font-weight:700; color:#000;}
+.search_fy em.flr a{border:0; padding:0; background:none; margin:0;}
+.v_yan1,.v_yan2{background: none;background-color: #1a1a1a;color:#fff;padding-left: 0;text-align: center;padding-right: 0;font-weight: normal;font-family: 'Microsoft YaHei';border-radius: 4px;cursor:pointer;border: none;color: #fff;width: 90px;height: 30px;line-height: 30px;}
+.v_yan1:hover,.v_yan2:hover{background: none;background-color: #be1e1e;color:#fff;}
+.search_fy a{background-color: #1a1a1a;border-radius: 3px;}
+.search_fy .current{background-color: #be1e1e;color: #fff;border-radius: 3px;}
+.search_fy a:hover{background-color: #be1e1e;}
+
+.vPage.white .search_fy a:visited{color: #222;}
+.vPage.white .search_fy{margin:20px 0; clear:both; text-align:center;color: #222;}
+.vPage.white .search_fy a{border:1px solid #d8d8d8; font-size:12px; padding:5px 9px; *line-height:28px!important; margin:0 4px; color:#222; text-decoration:none;}
+.vPage.white .search_fy a:hover{background:#be1e1e; padding:4px 9px; text-decoration:none; border-color:#d8d8d8; color:#fff;}
+.vPage.white .search_fy .current{background-color: #be1e1e;color: #fff;border-radius: 3px;}
+.vPage.white .search_fy a:hover{background-color: #be1e1e;}
+.vPage.white .search_fy a{background-color: #fff;border-radius: 3px;}
+.vPage.white .v_yan1,.vPage.white .v_yan2{background: none;background-color: #fff;color:#222;padding-left: 0;text-align: center;padding-right: 0;font-weight: normal;font-family: 'Microsoft YaHei';border-radius: 4px;cursor:pointer;border: none;color: #222;width: 90px;height: 30px;line-height: 30px;}
+.vPage.white .v_yan1:hover,.vPage.white .v_yan2:hover{background: none;background-color: #be1e1e;color:#fff;}

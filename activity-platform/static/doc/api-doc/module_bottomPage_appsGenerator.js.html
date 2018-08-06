@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: module/bottomPage/appsGenerator.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: module/bottomPage/appsGenerator.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import utils from 'commonJsDir/utils.js';
+import services from 'commonJsDir/services.js';
+import Native from 'commonJsDir/native.js';
+
+const NEWLOCALAPPSNAME = '_nappsst';
+
+let cpdParams = $.extend({}, Native.allParams);
+
+delete cpdParams.content_data;
+delete cpdParams.uxip_page_source_info;
+delete cpdParams.uxip_session_id;
+
+/** @module AppsGenerator */
+
+/**
+ * 构建生成cpd 和 cpt 应用列表
+ * @example
+ *
+ * //初始化获取刷新应用的方法
+ * let refreshNewCpds = AppsGenerator.storeNewCpds(appnum, timeout);
+ *
+ * //接着在应用安装成功的回调里面调用 refreshNewCpds()，则成功安装appnum个应用后就会自动发cpd请求接口预缓存cpd数据,下次进入页面则会使用该缓存数据更新应用
+ * //或者在timeout时间到了后也会预缓存cpd请求数据，如果是应用安装个数超过设定值而触发预缓存cpd数据，且timeout还没到时，则清除timeout定时器
+ *
+ *  //生成app应用列表
+ *  AppsGenerator.create(missions[0]).then((ret)=>{
+ *
+ *    $('.applist-container').prepend(Tmpl.applist({applist: ret.viewApplist}));
+ *
+ *   }).then(()=>{
+ *   let $installAllWord = $('.install-all i');
+ *
+ *   //初始化安装按钮
+ *   new AppsInstallInit({
+ *     appsSelector: '.install-btn',
+ *     installAllBtnSelector: '.install-placeholder',
+ *     exposureSelectorCls: 'install-btn',
+ *     onInstallAllUpdateStatus(status){
+ *       $installAllWord.attr('id', status);
+ *     }
+ *    })
+ *  })
+ *  @class
+ */
+class AppsGenerator{
+
+  static getNextAppToCombine(appMap, newApps){
+    let flag = 0;
+
+    return ()=>{
+
+      let item;
+
+      while(!!(item=newApps[flag++]) &amp;&amp; appMap[item.app.id]) /*Loop*/;
+
+      return item;
+    };
+
+  }
+
+  static getCombineCpds(){
+    let oldApps = localAppState(),
+        btnStates = localBtnState(),
+        newApps = localAppState(NEWLOCALAPPSNAME),
+        appIdsMap = {};
+
+    if(!oldApps || !newApps)
+      return oldApps;
+
+    oldApps.forEach((item)=>{
+      appIdsMap[item.app.id] = 1;
+    });
+
+    let getNextAppToCombineFn = this.getNextAppToCombine(appIdsMap, newApps);
+
+    oldApps.forEach((item, idx)=>{
+      let appId = item.app.id,
+          state = btnStates[appId],
+          replaceItem;
+
+      if(state != 1){
+        replaceItem = getNextAppToCombineFn();
+        if(replaceItem)
+          oldApps[idx] = replaceItem;
+      }
+    });
+
+    localAppState(oldApps);
+
+    return oldApps;
+  }
+
+  static transformApps(data){
+
+    let applist = data.ads || [];
+
+    return applist.filter((item, idx)=>{
+      let app = item.app;
+
+      if(app){
+        app.downloadUrl = '';
+        app.linkUrl = '';
+        item.iscpd = 1;
+
+        return true;
+      }
+    });
+  }
+
+  static getSource(mission){
+
+    let getApps = new Promise(function(resolve){
+
+      if(!mission || !mission.apps)
+        return resolve([]);
+
+      mission.apps.forEach(item=>{
+        item.app = {
+          icon: item.appIcon,
+          name: item.appName,
+          packageName: item.packageName,
+          id: item.appId,
+          versionCode: item.versionCode
+        };
+      });
+
+      resolve(mission.apps);
+    });
+
+    let getAdCpd = new Promise((resolve)=>{
+      let statesList = localAppState() || [],
+        btnStates = localBtnState(),
+        notuseend = utils.getStorage('notuseend'),
+        cpdCount = 0;
+
+      let availableStates = statesList.filter((item, idx)=>{
+        if(idx >= notuseend)
+          return;
+
+        cpdCount++;
+
+        return btnStates[item.app.id] == 1;
+      });
+
+      //cpd应用获取失败时，若缓存有应用则取缓存里的
+      if(!statesList.length || availableStates.length === cpdCount){
+        services.getAdCpd(cpdParams, (data)=>{
+
+          let applist = this.transformApps(data);
+
+          if(applist.length)
+            localAppState(applist);
+          else
+            applist = statesList;
+
+          resolve(applist);
+        },()=>{
+          resolve(statesList);
+        });
+      } else {
+        resolve(this.getCombineCpds());
+      }
+    });
+
+    return Promise.all([getApps, getAdCpd]);
+  }
+
+  static storeNewCpds(num = 5, timeout = 480000){
+    let temp = num,
+        newCpdsTimer;
+
+    let _getCpds = ()=>{
+      services.getAdCpd(cpdParams, (data)=>{
+        let applist = this.transformApps(data);
+
+        if(applist.length)
+          localAppState(applist, NEWLOCALAPPSNAME);
+      });
+    };
+
+    newCpdsTimer = setTimeout(_getCpds, timeout);
+
+    return ()=>{
+      if(--temp >0)
+        return;
+
+      temp = num;
+
+      if(newCpdsTimer){
+        clearTimeout(newCpdsTimer);
+        newCpdsTimer = null;
+      }
+
+      _getCpds();
+    };
+  }
+
+  static refactorApplist(datas){
+    let cpdAppList = datas[1],
+        customApplist = datas[0],
+        totalApps = this.totalApps,
+        customApplistOrdersMap = {},
+        tempArr = new Array(totalApps+1).join(0).split(''),
+        cpdFlag = 0;
+
+
+    customApplist.forEach((item)=>{
+      customApplistOrdersMap[item.orderIndex-1] = item;
+    });
+
+    for(let i=0; i &lt; totalApps; i++){
+      let appItem = customApplistOrdersMap[i];
+
+      if(!appItem){
+        appItem = cpdAppList[cpdFlag];
+        if(appItem)
+          cpdFlag++;
+        else
+          continue;
+      }
+
+      appItem.businessType = appItem.iscpd ? 2: 1;
+
+      tempArr[i] = appItem;
+
+    }
+    utils.setStorage('notuseend', cpdFlag)
+
+    for(let j=totalApps-1; j >=0; j--){
+      if(tempArr[j] == 0)
+        delete tempArr[j];
+      else
+        break;
+    }
+
+    return tempArr;
+  }
+  /**
+   * 生成应用列表
+   * @param  {object} mission - 传入/campaign/getCampaignInfo接口获取到的配置的拥有cpt应用的mission对象
+   * @param  {Number} totalApps - 应用列表的长度
+   * @return {promise} 生成列表后的promise对象
+   * @static
+   */
+  static create(mission, totalApps = 16){
+    this.totalApps = totalApps;
+    return this.getSource(mission).then(datas=>{
+      let viewApplist = this.refactorApplist(datas);
+      return {datas, viewApplist};
+    });
+  }
+}
+/**
+ * 基础localstorage存储操作
+ */
+let localStates = (storageName, key, val, defaultVal)=>{
+  var states = utils.getStorage(storageName) || defaultVal;
+
+  if(typeof key == 'undefined')
+    return states;
+  else if(key != null){
+    if(typeof val == 'undefined')
+      return states[key];
+    else if(val === null)
+      delete states[key];
+    else
+      states[key] = val;
+  }else
+    delete states[key];
+
+  utils.setStorage(storageName,states);
+};
+/**
+ * 存储应用状态 1: 已完成任务但还未抽奖 2:已抽奖
+ */
+let localBtnState = (appId, val)=>{
+  return localStates('_btsst', appId, val, {});
+};
+/**
+ * 存取缓存中的应用列表
+ */
+let localAppState = (applist, name='_appsst')=>{
+  if(typeof applist === 'string' &amp;&amp; !!applist)
+    return utils.getStorage(applist);
+
+  if(applist === undefined){
+    return utils.getStorage(name);
+  }
+
+  utils.setStorage(name, applist);
+};
+
+
+export {localStates, localBtnState, localAppState};
+
+export default AppsGenerator;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-ajax.html">ajax</a></li><li><a href="module-AppsGenerator.html">AppsGenerator</a></li><li><a href="module-AwardDialog.html">AwardDialog</a></li><li><a href="module-Dom.html">Dom</a></li><li><a href="module-httpService.html">httpService</a></li><li><a href="module-Lottery.html">Lottery</a></li><li><a href="module-Mock.html">Mock</a></li><li><a href="module-module_app_index.html">module/app/index</a></li><li><a href="module-Native.html">Native</a></li><li><a href="module-oauthService.html">oauthService</a></li><li><a href="module-showVerifyCodeDlg.html">showVerifyCodeDlg</a></li><li><a href="module-stateMachine.html">stateMachine</a></li><li><a href="module-tools.html">tools</a></li><li><a href="module-Track.html">Track</a></li><li><a href="module-utils.html">utils</a></li></ul><h3>Classes</h3><ul><li><a href="AppsInstallInit.html">AppsInstallInit</a></li><li><a href="ExtraWelfareList.html">ExtraWelfareList</a></li><li><a href="module-AppsGenerator-AppsGenerator.html">AppsGenerator</a></li></ul><h3>Namespaces</h3><ul><li><a href="module-AwardDialog-AwardDialog.html">AwardDialog</a></li><li><a href="module-Mock-Mock.html">Mock</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Jul 12 2018 17:29:08 GMT+0800 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
